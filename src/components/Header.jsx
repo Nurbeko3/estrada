@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { GlobalOutlined, MenuOutlined, CloseOutlined, SunOutlined, MoonOutlined } from '@ant-design/icons';
+import { GlobalOutlined, MenuOutlined, CloseOutlined, SunOutlined, MoonOutlined, DownOutlined } from '@ant-design/icons';
 import { Button, Dropdown, Drawer } from 'antd';
 import { useTranslation } from 'react-i18next';
 import { useTheme } from '../context/ThemeContext';
 import AnnouncementBar from './AnnouncementBar';
+import Logo from '../assets/images/Logo.jpg';
 
 const Header = () => {
     const { t, i18n } = useTranslation();
@@ -32,10 +33,60 @@ const Header = () => {
 
     const menuLinks = [
         { label: t('header.menu.home'), href: "#" },
-        { label: t('header.menu.news'), href: "#news" },
-        { label: t('header.menu.leadership'), href: "#leadership" },
-        { label: t('header.menu.gallery'), href: "#gallery" },
-        { label: t('header.menu.contact'), href: "#contact" },
+        {
+            label: t('header.menu.institute'),
+            key: 'institute',
+            children: [
+                { key: '1-1', label: <a href="#about">{t('header.menu.sub.about')}</a> },
+                { key: '1-2', label: <a href="#leadership">{t('header.menu.sub.leadership')}</a> },
+                { key: '1-3', label: <a href="#structure">{t('header.menu.sub.structure')}</a> },
+            ]
+        },
+        {
+            label: t('header.menu.education'),
+            key: 'education',
+            children: [
+                { key: '2-1', label: <a href="#bachelor">{t('header.menu.sub.bachelor')}</a> },
+                { key: '2-2', label: <a href="#master">{t('header.menu.sub.master')}</a> },
+                { key: '2-3', label: <a href="#curriculum">{t('header.menu.sub.curriculum')}</a> },
+            ]
+        },
+        {
+            label: t('header.menu.science'),
+            key: 'science',
+            children: [
+                { key: '3-1', label: <a href="#council">{t('header.menu.sub.council')}</a> },
+                { key: '3-2', label: <a href="#projects">{t('header.menu.sub.projects')}</a> },
+                { key: '3-3', label: <a href="#conferences">{t('header.menu.sub.conferences')}</a> },
+            ]
+        },
+        {
+            label: t('header.menu.info_service'),
+            key: 'info_service',
+            children: [
+                { key: '4-1', label: <a href="#news">{t('header.menu.sub.news')}</a> },
+                { key: '4-2', label: <a href="#announcements">{t('header.menu.sub.announcements')}</a> },
+                { key: '4-3', label: <a href="#press">{t('header.menu.sub.press')}</a> },
+            ]
+        },
+        {
+            label: t('header.menu.admission_year'),
+            key: 'admission',
+            children: [
+                { key: '5-1', label: <a href="#commission">{t('header.menu.sub.commission')}</a> },
+                { key: '5-2', label: <a href="#directions">{t('header.menu.sub.directions')}</a> },
+                { key: '5-3', label: <a href="#quotas">{t('header.menu.sub.quotas')}</a> },
+            ]
+        },
+        {
+            label: t('header.menu.students'),
+            key: 'students',
+            children: [
+                { key: '6-1', label: <a href="#dorm">{t('header.menu.sub.dorm')}</a> },
+                { key: '6-2', label: <a href="#talented">{t('header.menu.sub.talented')}</a> },
+                { key: '6-3', label: <a href="#clubs">{t('header.menu.sub.clubs')}</a> },
+            ]
+        },
     ];
 
     return (
@@ -54,10 +105,9 @@ const Header = () => {
 
                     {/* Logo Section */}
                     <div className="flex items-center gap-4">
-                        <div className={`relative flex items-center justify-center rounded-full font-extrabold text-xl transition-all duration-500 ${scrolled ? 'w-10 h-10 bg-accent text-white shadow-md' : 'w-12 h-12 bg-white/20 backdrop-blur-md text-white border border-white/30 shadow-lg'
+                        <div className={`relative flex items-center justify-center rounded-full font-extrabold text-xl transition-all duration-500 overflow-hidden ${scrolled ? 'w-10 h-10 shadow-md' : 'w-12 h-12 border border-white/30 shadow-lg'
                             }`}>
-                            BZ
-                            <div className="absolute inset-0 rounded-full border border-white/20 animate-ping opacity-20"></div>
+                            <img src={Logo} alt="Logo" className="w-full h-full object-cover" />
                         </div>
                         <div className={`leading-tight uppercase font-bold transition-colors duration-500 flex flex-col ${scrolled ? 'text-primary dark:text-white' : 'text-white'
                             }`}>
@@ -67,18 +117,35 @@ const Header = () => {
                     </div>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex items-center gap-8">
-                        {menuLinks.map((link, index) => (
-                            <a
-                                key={index}
-                                href={link.href}
-                                className={`text-sm font-semibold uppercase tracking-widest transition-all duration-300 relative group py-2 ${scrolled ? 'text-gray-700 dark:text-gray-200 hover:text-accent' : 'text-white/90 hover:text-white'
-                                    }`}
-                            >
-                                {link.label}
-                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full ease-out"></span>
-                            </a>
-                        ))}
+                    <nav className="hidden md:flex items-center gap-6 xl:gap-8">
+                        {menuLinks.map((link, index) => {
+                            if (link.children) {
+                                return (
+                                    <Dropdown key={link.key || index} menu={{ items: link.children }} placement="bottom" arrow={{ pointAtCenter: true }}>
+                                        <a
+                                            className={`text-sm font-semibold uppercase tracking-widest transition-all duration-300 relative group py-2 flex items-center gap-1 cursor-pointer ${scrolled ? 'text-gray-700 dark:text-gray-200 hover:text-accent' : 'text-white/90 hover:text-white'
+                                                }`}
+                                            onClick={(e) => e.preventDefault()}
+                                        >
+                                            {link.label}
+                                            <DownOutlined className="text-xs opacity-70 group-hover:opacity-100 transition-opacity" />
+                                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full ease-out"></span>
+                                        </a>
+                                    </Dropdown>
+                                );
+                            }
+                            return (
+                                <a
+                                    key={index}
+                                    href={link.href}
+                                    className={`text-sm font-semibold uppercase tracking-widest transition-all duration-300 relative group py-2 ${scrolled ? 'text-gray-700 dark:text-gray-200 hover:text-accent' : 'text-white/90 hover:text-white'
+                                        }`}
+                                >
+                                    {link.label}
+                                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full ease-out"></span>
+                                </a>
+                            );
+                        })}
                     </nav>
 
                     {/* Language & Actions */}

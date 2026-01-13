@@ -4,10 +4,37 @@
     "subtitle": "Национальный институт эстрадного искусства",
     "menu": {
       "home": "Главная",
+      "institute": "Институт",
+      "education": "Образование",
+      "science": "Научная деятельность",
+      "info_service": "Информационная служба",
+      "admission_year": "Прием-2025",
+      "students": "Студенты",
+      "admission": "Прием",
       "news": "Новости",
       "leadership": "Руководство",
       "gallery": "Фотогалерея",
-      "contact": "Контакты"
+      "contact": "Контакты",
+      "sub": {
+        "about": "Об институте",
+        "leadership": "Руководство",
+        "structure": "Структура",
+        "bachelor": "Бакалавриат",
+        "master": "Магистратура",
+        "curriculum": "Учебные планы",
+        "council": "Ученый совет",
+        "projects": "Научные проекты",
+        "conferences": "Конференции",
+        "news": "Новости",
+        "announcements": "Объявления",
+        "press": "Пресс-служба",
+        "commission": "Приемная комиссия",
+        "directions": "Направления",
+        "quotas": "Квоты",
+        "dorm": "Общежитие",
+        "talented": "Одаренные студенты",
+        "clubs": "Кружки"
+      }
     },
     "admission": "Прием 2026",
     "mobile_menu_title": "Меню"

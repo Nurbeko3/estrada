@@ -4,10 +4,37 @@
     "subtitle": "National Institute of Pop Art",
     "menu": {
       "home": "Home",
+      "institute": "Institute",
+      "education": "Education",
+      "science": "Scientific Activity",
+      "info_service": "Information Service",
+      "admission_year": "Admission-2025",
+      "students": "Students",
+      "admission": "Admission",
       "news": "News",
       "leadership": "Leadership",
       "gallery": "Gallery",
-      "contact": "Contact"
+      "contact": "Contact",
+      "sub": {
+        "about": "About Institute",
+        "leadership": "Leadership",
+        "structure": "Structure",
+        "bachelor": "Bachelor",
+        "master": "Master",
+        "curriculum": "Curriculum",
+        "council": "Scientific Council",
+        "projects": "Scientific Projects",
+        "conferences": "Conferences",
+        "news": "News",
+        "announcements": "Announcements",
+        "press": "Press Service",
+        "commission": "Admission Commission",
+        "directions": "Directions",
+        "quotas": "Quotas",
+        "dorm": "Dormitory",
+        "talented": "Talented Students",
+        "clubs": "Clubs"
+      }
     },
     "admission": "Admission 2026",
     "mobile_menu_title": "Menu"

@@ -1,6 +1,7 @@
 import React from 'react';
 import { FacebookOutlined, InstagramOutlined, YoutubeOutlined, EnvironmentOutlined, PhoneOutlined, MailOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
+import Logo from '../assets/images/Logo.jpg';
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -12,8 +13,8 @@ const Footer = () => {
                     {/* Column 1: Info */}
                     <div data-aos="fade-up">
                         <div className="flex items-center gap-3 mb-6">
-                            <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center font-bold text-white text-lg shadow-lg shadow-accent/30">
-                                BZ
+                            <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center font-bold text-white text-lg shadow-lg shadow-accent/30 overflow-hidden">
+                                <img src={Logo} alt="Logo" className="w-full h-full object-cover" />
                             </div>
                             <div className="font-bold leading-tight">
                                 <span className="block text-xs uppercase tracking-widest text-gray-400 font-medium">{t('header.title')}</span>
