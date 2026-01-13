@@ -1,16 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import Header from './components/Header';
+import AnnouncementBar from './components/AnnouncementBar';
+import Hero from './sections/Hero';
+import News from './sections/News';
+import Leadership from './sections/Leadership';
+import Gallery from './sections/Gallery';
+import Footer from './components/Footer';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1>Hello world!</h1>
-    </>
-  )
+    <div className="min-h-screen bg-white text-gray-900 font-sans">
+      <AnnouncementBar />
+      <Header />
+      <main>
+        <Hero />
+        <News />
+        <Leadership />
+        <Gallery />
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
