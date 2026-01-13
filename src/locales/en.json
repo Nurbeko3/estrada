@@ -1,0 +1,93 @@
+{
+  "header": {
+    "title": "Named after Batir Zakirov",
+    "subtitle": "National Institute of Pop Art",
+    "menu": {
+      "home": "Home",
+      "news": "News",
+      "leadership": "Leadership",
+      "gallery": "Gallery",
+      "contact": "Contact"
+    },
+    "admission": "Admission 2026",
+    "mobile_menu_title": "Menu"
+  },
+  "announcement": {
+    "text": "Attention! Admission for the 2026 academic year starts on June 20th. We welcome all applicants! &nbsp; &nbsp; &nbsp; &nbsp; Announcement: A grand celebration dedicated to the Day of Defenders of the Motherland will be held at the institute on January 14th."
+  },
+  "hero": {
+    "slide1": {
+      "tag": "Republic Higher Education Institution",
+      "title": "On the path of developing art and culture",
+      "subtitle": "Botir Zokirov National Institute of Pop Art"
+    },
+    "slide2": {
+      "tag": "Republic Higher Education Institution",
+      "title": "Professional education and creative environment",
+      "subtitle": "Modern opportunities for future artists"
+    },
+    "slide3": {
+      "tag": "Republic Higher Education Institution",
+      "title": "Presenting national pop art to the world",
+      "subtitle": "International cooperation and festivals"
+    },
+    "btn_more": "Read More",
+    "btn_video": "Watch Video"
+  },
+  "news": {
+    "tag": "Latest News",
+    "title": "Institute Life",
+    "all_news": "All News",
+    "items": {
+      "1": {
+        "title": "An event on \"New Uzbekistan - New Worldview\" was held at the Institute",
+        "excerpt": "Today, in order to increase the effectiveness of spiritual and educational work in our institute..."
+      },
+      "2": {
+        "title": "A new memorandum was signed within the framework of international cooperation",
+        "excerpt": "New educational programs are being launched in cooperation with the Russian Academy of Music..."
+      },
+      "3": {
+        "title": "Our students won an international competition",
+        "excerpt": "A 3rd-year student won the pop singing competition held in France..."
+      }
+    }
+  },
+  "leadership": {
+    "tag": "Leadership",
+    "title": "Institute Leadership",
+    "roles": {
+      "rector": "Rector",
+      "vice_academic": "Vice-Rector for Academic Affairs",
+      "vice_science": "Vice-Rector for Scientific Affairs"
+    },
+    "desc": {
+      "1": "Doctor of Art History, Professor. Has 20 years of scientific and pedagogical experience.",
+      "2": "Candidate of Philosophical Sciences. Expert on digitalization of the education system.",
+      "3": "Professor. Organizer of international music conferences."
+    }
+  },
+  "gallery": {
+    "tag": "Gallery",
+    "title": "Bright Moments of the Institute",
+    "btn_view_all": "View All Photos",
+    "view": "View"
+  },
+  "footer": {
+    "desc": "Our main goal is the development of Uzbekistan's national pop art, discovering young talents and raising them to a professional level.",
+    "links_title": "Quick Links",
+    "links": {
+      "about": "About Institute",
+      "admission": "Admission Process",
+      "life": "Student Life",
+      "library": "E-Library",
+      "vacancy": "Vacancies"
+    },
+    "contact_title": "Contact",
+    "address": "Tashkent city, Yunusabad district, Amir Temur street, 123",
+    "map_title": "Map",
+    "rights": "© {{year}} All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  }
+}

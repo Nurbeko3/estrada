@@ -1,0 +1,93 @@
+{
+  "header": {
+    "title": "Botir Zokirov nomidagi",
+    "subtitle": "Milliy estrada san'ati instituti",
+    "menu": {
+      "home": "Asosiy",
+      "news": "Yangiliklar",
+      "leadership": "Rahbariyat",
+      "gallery": "Fotogalereya",
+      "contact": "Bog'lanish"
+    },
+    "admission": "Qabul 2026",
+    "mobile_menu_title": "Menu"
+  },
+  "announcement": {
+    "text": "Diqqat! 2026-o‘quv yili uchun qabul jarayonlari 20-iyundan boshlanadi. Barcha abituriyentlarni kutib qolamiz! &nbsp; &nbsp; &nbsp; &nbsp; E'lon: 14-yanvar — Vatan himoyachilari kuni munosabati bilan institutda katta bayram tadbiri o'tkaziladi."
+  },
+  "hero": {
+    "slide1": {
+      "tag": "Respublika oliy ta'lim muassasasi",
+      "title": "San'at va madaniyatni rivojlantirish yo'lida",
+      "subtitle": "Botir Zokirov nomidagi Milliy estrada san'ati instituti"
+    },
+    "slide2": {
+      "tag": "Respublika oliy ta'lim muassasasi",
+      "title": "Professional ta'lim va ijodiy muhit",
+      "subtitle": "Kelajak san'atkorlari uchun zamonaviy imkoniyatlar"
+    },
+    "slide3": {
+      "tag": "Respublika oliy ta'lim muassasasi",
+      "title": "Milliy estrada san'atini dunyoga tanitamiz",
+      "subtitle": "Xalqaro hamkorlik va festivallar"
+    },
+    "btn_more": "Batafsil ma'lumot",
+    "btn_video": "Video lavha"
+  },
+  "news": {
+    "tag": "So'nggi yangiliklar",
+    "title": "Institut hayoti",
+    "all_news": "Barcha yangiliklar",
+    "items": {
+      "1": {
+        "title": "Institutda \"Yangi O'zbekiston - yangicha dunyoqarash\" mavzusida tadbir bo'lib o'tdi",
+        "excerpt": "Bugun institutimizda ma'naviy-ma'rifiy ishlar samaradorligini oshirish maqsadida..."
+      },
+      "2": {
+        "title": "Xalqaro hamkorlik doirasida yangi memorandum imzolandi",
+        "excerpt": "Rossiya musiqa akademiyasi bilan hamkorlikda yangi o'quv dasturlari yo'lga qo'yilmoqda..."
+      },
+      "3": {
+        "title": "Talabalarimiz xalqaro tanlovda g'olib bo'lishdi",
+        "excerpt": "Fransiyada o'tkazilgan estrada xonandaligi tanlovida 3-kurs talabasi..."
+      }
+    }
+  },
+  "leadership": {
+    "tag": "Rahbariyat",
+    "title": "Institut rahbariyati",
+    "roles": {
+      "rector": "Rektor",
+      "vice_academic": "O'quv ishlari bo'yicha prorektor",
+      "vice_science": "Ilmiy ishlar bo'yicha prorektor"
+    },
+    "desc": {
+      "1": "San'atshunoslik fanlari doktori, professor. 20 yillik ilmiy va pedagogik tajribaga ega.",
+      "2": "Falsafa fanlari nomzodi. Ta'lim tizimini raqamlashtirish bo'yicha ekspert.",
+      "3": "Professor. Xalqaro musiqa konferensiyalari tashkilotchisi."
+    }
+  },
+  "gallery": {
+    "tag": "Fotogalereya",
+    "title": "Institutning yorqin lahzalari",
+    "btn_view_all": "Barcha rasmlarni ko'rish",
+    "view": "Ko'rish"
+  },
+  "footer": {
+    "desc": "O'zbekiston milliy estrada san'atini rivojlantirish, yosh iste'dodlarni kashf etish va ularni professional darajaga ko'tarish bizning asosiy maqsadimizdir.",
+    "links_title": "Tezkor havolalar",
+    "links": {
+      "about": "Institut haqida",
+      "admission": "Qabul jarayonlari",
+      "life": "Talabalar hayoti",
+      "library": "Elektron kutubxona",
+      "vacancy": "Bo'sh ish o'rinlari"
+    },
+    "contact_title": "Bog'lanish",
+    "address": "Toshkent sh., Yunusobod tumani, Amir Temur ko'chasi, 123-uy",
+    "map_title": "Xarita",
+    "rights": "© {{year}} Barcha huquqlar himoyalangan.",
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Foydalanish shartlari"
+  }
+}
