@@ -5,6 +5,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import LeadershipPage from './pages/LeadershipPage';
+import HistoryPage from './pages/HistoryPage';
+import NewsCategoryPage from './pages/NewsCategoryPage';
 
 function App() {
   const { theme: currentTheme } = useTheme();
@@ -24,6 +26,8 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/leadership" element={<LeadershipPage />} />
+            <Route path="/history" element={<HistoryPage />} />
+            <Route path="/news/:category" element={<NewsCategoryPage />} />
           </Routes>
         </main>
         <Footer />

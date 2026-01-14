@@ -13,50 +13,50 @@ const LeadershipPage = () => {
     const leaders = [
         {
             id: 1,
-            name: "Mansurov Avaz Maksudovich",
-            role: "O'zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san'ati instituti rektori",
-            title: "O'zbekiston Respublikasida xizmat ko'rsatgan madaniyat xodimi, professor",
-            time: "Dushanba 9:00 dan 18:00 gacha",
+            name: t('leadership.items.1.name'),
+            role: t('leadership.items.1.role'),
+            title: t('leadership.items.1.title'),
+            time: t('leadership.items.1.time'),
             phone: "+998 71 200 00 00",
             email: "info@estrada-art.uz",
             image: mansurovImg
         },
         {
             id: 2,
-            name: "Qurbonova Feruza Xayrullayevna",
-            role: "Yoshlar masalalari va ma'naviy-ma'rifiy ishlar bo'yicha birinchi prorektor",
-            title: "",
-            time: "Dushanba 15:00 dan 17:00 gacha",
+            name: t('leadership.items.2.name'),
+            role: t('leadership.items.2.role'),
+            title: t('leadership.items.2.title'),
+            time: t('leadership.items.2.time'),
             phone: "+998 71 200 00 00",
             email: "qurbonovaf@mail.ru",
             image: qurbonovaImg
         },
         {
             id: 3,
-            name: "Mirzayev Akbarjon Abduraximovich",
-            role: "O'quv ishlari bo'yicha prorektor",
-            title: "Dotsent",
-            time: "Seshanba 15:00 dan 17:00 gacha",
+            name: t('leadership.items.3.name'),
+            role: t('leadership.items.3.role'),
+            title: t('leadership.items.3.title'),
+            time: t('leadership.items.3.time'),
             phone: "+998 71 200 00 00",
             email: "mesiakbarjon@gmail.com",
             image: mirzayevImg
         },
         {
             id: 4,
-            name: "Muxamedova Feruza Nurmaxmatovna",
-            role: "Ilmiy ishlar va innovatsiyalar bo'yicha prorektor",
-            title: "San'atshunoslik fanlari nomzodi (PhD)",
-            time: "Chorshanba 14:00 dan 16:00 gacha",
+            name: t('leadership.items.4.name'),
+            role: t('leadership.items.4.role'),
+            title: t('leadership.items.4.title'),
+            time: t('leadership.items.4.time'),
             phone: "+998 71 200 00 00",
             email: "feruzamuhamedova1986@gmail.com",
             image: muxamedovaImg
         },
         {
             id: 5,
-            name: "Tursunbayev Ilxom Karimovich",
-            role: "Ishlar boshqarmasi boshlig'i",
-            title: "",
-            time: "Har kuni soat 10:00 dan 15:00 gacha",
+            name: t('leadership.items.5.name'),
+            role: t('leadership.items.5.role'),
+            title: t('leadership.items.5.title'),
+            time: t('leadership.items.5.time'),
             phone: "+998 71 200 00 00",
             email: "info@estrada-art.uz",
             image: tursunbayevImg
@@ -67,7 +67,7 @@ const LeadershipPage = () => {
         <section className="pt-32 pb-20 bg-gray-50 dark:bg-black transition-colors duration-300 min-h-screen">
             <div className="container mx-auto px-4 md:px-8">
                 <div className="text-center mb-16" data-aos="fade-up">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">Rahbariyat</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">{t('leadership.title')}</h1>
                     <div className="w-24 h-1.5 bg-accent mx-auto rounded-full"></div>
                 </div>
 

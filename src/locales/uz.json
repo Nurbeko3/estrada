@@ -59,28 +59,51 @@
   },
   "hero": {
     "slide1": {
-      "tag": "Respublika oliy ta'lim muassasasi",
-      "title": "San'at va madaniyatni rivojlantirish yo'lida",
-      "subtitle": "Botir Zokirov nomidagi Milliy estrada san'ati instituti"
+      "tag": "Buyuk San'atkor",
+      "title": "Botir Zokirov",
+      "subtitle": "Milliy estrada san'ati asoschisi va betakror ovoz sohibi"
     },
     "slide2": {
-      "tag": "Respublika oliy ta'lim muassasasi",
-      "title": "Professional ta'lim va ijodiy muhit",
-      "subtitle": "Kelajak san'atkorlari uchun zamonaviy imkoniyatlar"
+      "tag": "Ijodiy Muhit",
+      "title": "Zamonaviy Estrada",
+      "subtitle": "Professional vokal, sahna madaniyati va yangi yulduzlar"
     },
     "slide3": {
-      "tag": "Respublika oliy ta'lim muassasasi",
-      "title": "Milliy estrada san'atini dunyoga tanitamiz",
-      "subtitle": "Xalqaro hamkorlik va festivallar"
+      "tag": "Jazz & Blues",
+      "title": "Jazz Orkestri",
+      "subtitle": "Jonli ijro, improvizatsiya va musiqiy uyg'unlik"
     },
     "btn_more": "Batafsil ma'lumot",
-    "btn_video": "Video lavha"
+    "btn_video": "Video lavha",
+    "btn_music_play": "Maftun Bo'ldim (Tinglash)",
+    "btn_music_stop": "Musiqani to'xtatish",
+    "music_now_playing": "Hozir yangramoqda",
+    "music_title": "Botir Zokirov - Maftun Bo'ldim"
   },
   "news": {
     "tag": "So'nggi yangiliklar",
     "title": "Institut hayoti",
     "all_news": "Barcha yangiliklar",
-    "items": {
+    "categories": {
+      "student_life": "Talabalar hayoti",
+      "official": "Yangiliklar va E'lonlar",
+      "creative": "Ijodiy faoliyat"
+    },
+    "student_life_items": {
+      "1": {
+        "title": "Talabalarimiz xalqaro tanlovda g'olib bo'lishdi",
+        "excerpt": "Fransiyada o'tkazilgan estrada xonandaligi tanlovida 3-kurs talabasi..."
+      },
+      "2": {
+        "title": "Talabalar turar joyida 'Pazanda qizlar' tanlovi",
+        "excerpt": "Talabalar turar joyida qizlar o'rtasida pazandalik mahoratini oshirish maqsadida..."
+      },
+      "3": {
+        "title": "Yozgi oromgohda maroqli hordiq",
+        "excerpt": "Faol talabalarimiz uchun yozgi ta'tilda Bo'stonliq tumanidagi oromgohda..."
+      }
+    },
+    "official_items": {
       "1": {
         "title": "Institutda \"Yangi O'zbekiston - yangicha dunyoqarash\" mavzusida tadbir bo'lib o'tdi",
         "excerpt": "Bugun institutimizda ma'naviy-ma'rifiy ishlar samaradorligini oshirish maqsadida..."
@@ -90,23 +113,95 @@
         "excerpt": "Rossiya musiqa akademiyasi bilan hamkorlikda yangi o'quv dasturlari yo'lga qo'yilmoqda..."
       },
       "3": {
-        "title": "Talabalarimiz xalqaro tanlovda g'olib bo'lishdi",
-        "excerpt": "Fransiyada o'tkazilgan estrada xonandaligi tanlovida 3-kurs talabasi..."
+        "title": "Ilmiy kengashning navbatdagi yig'ilishi",
+        "excerpt": "Ilmiy kengashda institutning o'quv va ilmiy faoliyatiga oid muhim masalalar..."
+      }
+    },
+    "creative_items": {
+      "1": {
+        "title": "Estrada orkestrining hisobot konserti",
+        "excerpt": "Katta sahnada institut estrada orkestrining yillik hisobot konserti bo'lib o'tdi..."
+      },
+      "2": {
+        "title": "Yangi musiqiy albom taqdimoti",
+        "excerpt": "Ustoz-shogird an'anasi asosida tayyorlangan yangi musiqiy to'plam..."
+      },
+      "3": {
+        "title": "Master-klass: Jazz improvizatsiyasi",
+        "excerpt": "Mashhur jazz ijrochisi ishtirokida talabalar uchun maxsus mahorat darsi..."
       }
     }
   },
   "leadership": {
     "tag": "Rahbariyat",
     "title": "Institut rahbariyati",
-    "roles": {
-      "rector": "Rektor",
-      "vice_academic": "O'quv ishlari bo'yicha prorektor",
-      "vice_science": "Ilmiy ishlar bo'yicha prorektor"
-    },
-    "desc": {
-      "1": "San'atshunoslik fanlari doktori, professor. 20 yillik ilmiy va pedagogik tajribaga ega.",
-      "2": "Falsafa fanlari nomzodi. Ta'lim tizimini raqamlashtirish bo'yicha ekspert.",
-      "3": "Professor. Xalqaro musiqa konferensiyalari tashkilotchisi."
+    "items": {
+      "1": {
+        "name": "Mansurov Avaz Maksudovich",
+        "role": "O'zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san'ati instituti rektori",
+        "title": "O'zbekiston Respublikasida xizmat ko'rsatgan madaniyat xodimi, professor",
+        "time": "Dushanba 9:00 dan 18:00 gacha"
+      },
+      "2": {
+        "name": "Qurbonova Feruza Xayrullayevna",
+        "role": "Yoshlar masalalari va ma'naviy-ma'rifiy ishlar bo'yicha birinchi prorektor",
+        "title": "",
+        "time": "Dushanba 15:00 dan 17:00 gacha"
+      },
+      "3": {
+        "name": "Mirzayev Akbarjon Abduraximovich",
+        "role": "O'quv ishlari bo'yicha prorektor",
+        "title": "Dotsent",
+        "time": "Seshanba 15:00 dan 17:00 gacha"
+      },
+      "4": {
+        "name": "Muxamedova Feruza Nurmaxmatovna",
+        "role": "Ilmiy ishlar va innovatsiyalar bo'yicha prorektor",
+        "title": "San'atshunoslik fanlari nomzodi (PhD)",
+        "time": "Chorshanba 14:00 dan 16:00 gacha"
+      },
+      "5": {
+        "name": "Tursunbayev Ilxom Karimovich",
+        "role": "Ishlar boshqarmasi boshlig'i",
+        "title": "",
+        "time": "Har kuni soat 10:00 dan 15:00 gacha"
+      }
+    }
+  },
+  "history": {
+    "title": "Institut Tarixi",
+    "intro1": "O‘zbekiston Respublikasi Prezidentining 2021-yil 16-oktabrdagi <1>PQ-5261-son qarori</1> bilan O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati instituti tashkil etildi.",
+    "intro2": "O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati institutining ochilish marosimida O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev estrada hofizi Botir Zokirov haqida quyidagi so‘zlarni aytdi:",
+    "quote": "“Taqdir Botir Zokirovning zimmasiga o‘zbek estrada san’atining asoschisi bo‘lishdek ulug‘vor bir vazifani yukladi va bu vazifani u sharaf bilan ado etdi. <1/> Alloh taoloning o‘zi Botir Zokirovga ato etgan benazir iste’dod va insoniy fazilatlar tufayli u san’at olamida chinakam mo‘jizalar yaratdi.”",
+    "president_signature": "O'zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev",
+    "btn_speech": "To‘liq nutq",
+    "image_caption": "O'zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev Botir Zokirov haykali ochilish marosimida",
+    "timeline": {
+      "0": {
+        "year": "1885",
+        "title": "O‘zbek estrada musiqasi",
+        "description": "O‘zbek estrada musiqasi 100 yillik boy tarixga ega. Ta’kidlash joizki, ushbu san’atning ilk shakllari zamonaviy tasavvurlardan farqli ravishda estradaning yuzaki ko‘rinishlarini namoyish etgan edi. Bugungi kun zamonaviy tomoshabinlarining sahnada ko‘rayotgan va tinglayotgan estrada asarlari bu – turli davr madaniyatining ta’siri, siyosiy va ijtimoiy voqeliklardagi o‘zgarishlar hamda iste’dod egalarining ko‘p yillik mehnati va izlanishlari samarasidir."
+      },
+      "1": {
+        "year": "1997",
+        "title": "Toshkent davlat konservatoriyasida estrada ijrochiligi kafedrasi",
+        "description": "Dastlab Muxtor Ashrafiy nomidagi Toshkent davlat konservatoriyasida estrada ijrochiligi kafedrasi o‘z faoliyatini boshladi. Shu tariqa 1997-yildan boshlab, O‘zbekistonda ilk bor estrada musiqa san’ati tarixi oliy ta’lim tizimida o‘qitilishi yo‘lga qo‘yila boshlagan."
+      },
+      "2": {
+        "year": "2002-2021",
+        "title": "O‘zbekiston davlat konservatoriyasi tarkibidagi “Estrada san’ati” fakulteti",
+        "description": "2002-yili Toshkent davlat konservatoriyasiga O‘zbekiston davlat konservatoriyasi maqomi berilishi munosabati bilan yangi bino foydalanishga topshirilgach, tuzilmaga “Estrada san’ati” fakulteti kiritilib, o‘z faoliyatini 2021-yilga qadar olib bordi."
+      },
+      "3": {
+        "year": "2021",
+        "title": "O‘zbekiston Respublikasi Prezidenti qarori",
+        "description": "“Estrada san’ati” fakulteti negizida O‘zbekiston Respublikasi Prezidentining 2021-yil 16-oktabrdagi PQ-5261-son qarori bilan O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati instituti tashkil etildi."
+      },
+      "4": {
+        "year": "2022-2023",
+        "title": "Institutning bakalavriat va magistratura yo‘nalishlari belgilandi",
+        "description": "2022-2023-yillarda bakalavr va magistrlar uchun bir qator yangi mutaxassislik va yo‘nalishlar tasdiqlandi. Hozirgi kunda Botir Zokirov nomidagi Milliy estrada san’ati instituti - estrada xonandaligi, estrada cholg‘u ijrochiligi, kompozitorlik san’ati, musiqashunoslik, estrada orkestri dirijyorligi, musiqiy ovoz rejissyorligi hamda estrada ijrochiligi pedagoglarini tayyorlash yo‘nalishlari bo‘yicha yuqori malakali mutaxassislar tayyorlamoqda. \"Estrada xonandaligi\" kafedrasi - Botir Zokirov nomidagi Milliy estrada san'ati institutining yetakchi kafedralaridan biridir. Ushbu kafedraga taniqli kompozitor, O'zbekiston Respublikasi san'at arbobi, professor Dilorom Amanullayeva rahbarlik qilib kelmoqda. Mazkur yo'nalishda talabalar o'zbek estrada san'atining yetuk namoyondalari - Yunus To'rayev, Farruh Zokirov, Mansur Toshmatov, Kozim Qayumovlardan xonandalik sirlari va mahoratini o'rganib kelmoqdalar. \"Estrada xonandalik\" kafedrasida faoliyat yuritayotgan yosh avlod pedagog kadrlari Akjol Meldebekov, Sabina Hamdamova, To'lqin Tadjiyev va Rasul Abdullayevlar estrada san'atida yetakchi o'rinlarni egallamoqdalar. Estrada vokal ijrosini cholg'u jo'rligisiz tasavvur qilib bo'lmaydi. Institutda \"Estrada cholg'u ijrochiligi\" kafedrasi faoliyat yuritayotgan bo'lib, unda gitara, bas gitara, saksafon, truba, trombon, fortepiano, zarbli cholg'ularni professional darajada o'zlashtirish uchun barcha imkoniyatlar yaratilgan. Estrada ijrochiligi yo'nalishida pedagog kadrlarni tayyorlash maqsadida institutda \"Estrada ijrochiligi pedagoglari tayyorlash\" kafedrasi o'z faoliyatini yuritmoqda. Ushbu kafedra bitiruvchilari estrada yo'nalishida yangi avlod kadrlarini tarbiyalashda o'z hissasini qo'shishga tayyor. \"Musiqiy ovoz rejissyorligi\" yo'nalishida tahsil olayotgan talabalar estrada janrlaridagi musiqalarni yozib olishda zamonaviy texnologiya imkoniyatlarini o'rganishadi. Ularning yordami bilan estrada ijrochilari o'z san'atini tinglovchilarga maksimal darajada yetkazish imkoniyatiga ega bo'ladilar. Estrada janridagi musiqiy asarlarning o'ziga xos xususiyatlarini inobatga olgan holda, uning rivojlanish va yaratilish tarixini asoslab beruvchi va o'rganuvchi yo'nalish - bu \"Musiqashunoslik\" ta'limitdir. Estrada musiqashunosligining asosiy maqsadi - kompozitorlik, xonandalik va cholg'u ijrochiligining ijodiy jarayondagi tarixiy bosqichlari, qonuniyatlar va qarama-qarshiliklarni o'rganish, baholash mezonlarini aniqlash, didga moyillik xususiyatlarini shakllantirishdan iborat. Institutda ijodiy yo'nalishdagi kompozitor va dirijyorlar ham tayyorlanadi. Ta'limning tizimli va yuqori kasbiy tayyorgarligi xalqaro standart talablariga javob beradi. \"Kompozitorlik va aranjirovka\" va \"Estrada orkestri dirijyorligi\" ta'lim yo'nalishi bitiruvchilari turli janrlarda estrada jaz musiqasini yaratishda bilim va ko'nikmaga ega bo'ladilar. Institut professor-o'qituvchilari va talabalarining ilmiy-ijodiy salohiyatini rivojlantirish maqsadida, xalqaro va respublika ilmiy-amaliy konferensiyalar, ilmiy loyihalarni tashkil etish va o'tkazish orqali amalga oshiriladi. O'zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san'ati instituti nafaqat O'zbekiston, balki jahon musiqa madaniyati rivojiga ham o'z hissasini qo'shib kelmoqda."
+      }
     }
   },
   "gallery": {

@@ -55,7 +55,7 @@ const Header = () => {
             children: [
                 { key: '1-1', label: <a href="/#structure">{t('header.menu.sub.structure')}</a> },
                 { key: '1-2', label: <Link to="/leadership">{t('header.menu.sub.leadership')}</Link> },
-                { key: '1-3', label: <a href="/#history">{t('header.menu.sub.history')}</a> },
+                { key: '1-3', label: <Link to="/history">{t('header.menu.sub.history')}</Link> },
                 { key: '1-4', label: <a href="/#docs">{t('header.menu.sub.docs')}</a> },
                 { key: '1-5', label: <a href="/#coop">{t('header.menu.sub.coop')}</a> },
                 { key: '1-6', label: <a href="/#links">{t('header.menu.sub.links')}</a> },

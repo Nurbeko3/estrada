@@ -59,28 +59,51 @@
   },
   "hero": {
     "slide1": {
-      "tag": "Republic Higher Education Institution",
-      "title": "On the path of developing art and culture",
-      "subtitle": "Botir Zokirov National Institute of Pop Art"
+      "tag": "Great Artist",
+      "title": "Batyr Zakirov",
+      "subtitle": "Founder of national pop art and owner of a unique voice"
     },
     "slide2": {
-      "tag": "Republic Higher Education Institution",
-      "title": "Professional education and creative environment",
-      "subtitle": "Modern opportunities for future artists"
+      "tag": "Creative Environment",
+      "title": "Modern Pop Art",
+      "subtitle": "Professional vocals, stage culture, and new stars"
     },
     "slide3": {
-      "tag": "Republic Higher Education Institution",
-      "title": "Presenting national pop art to the world",
-      "subtitle": "International cooperation and festivals"
+      "tag": "Jazz & Blues",
+      "title": "Jazz Orchestra",
+      "subtitle": "Live performance, improvisation, and musical harmony"
     },
     "btn_more": "Read More",
-    "btn_video": "Watch Video"
+    "btn_video": "Watch Video",
+    "btn_music_play": "Maftun Bo'ldim (Listen)",
+    "btn_music_stop": "Stop Music",
+    "music_now_playing": "Now Playing",
+    "music_title": "Batyr Zakirov - Maftun Bo'ldim"
   },
   "news": {
     "tag": "Latest News",
     "title": "Institute Life",
     "all_news": "All News",
-    "items": {
+    "categories": {
+      "student_life": "Student Life",
+      "official": "News and Announcements",
+      "creative": "Creative Activity"
+    },
+    "student_life_items": {
+      "1": {
+        "title": "Our students won an international competition",
+        "excerpt": "A 3rd-year student won the pop singing competition held in France..."
+      },
+      "2": {
+        "title": "'Skilled Girls' contest in the student dormitory",
+        "excerpt": "In order to improve culinary skills among girls in the student dormitory..."
+      },
+      "3": {
+        "title": "Great rest at the summer camp",
+        "excerpt": "For our active students during the summer holidays in a camp in the Bostanlyk district..."
+      }
+    },
+    "official_items": {
       "1": {
         "title": "An event on \"New Uzbekistan - New Worldview\" was held at the Institute",
         "excerpt": "Today, in order to increase the effectiveness of spiritual and educational work in our institute..."
@@ -90,23 +113,95 @@
         "excerpt": "New educational programs are being launched in cooperation with the Russian Academy of Music..."
       },
       "3": {
-        "title": "Our students won an international competition",
-        "excerpt": "A 3rd-year student won the pop singing competition held in France..."
+        "title": "Regular meeting of the Scientific Council",
+        "excerpt": "Important issues related to the educational and scientific activities of the institute were discussed at the Scientific Council meeting..."
+      }
+    },
+    "creative_items": {
+      "1": {
+        "title": "Reporting concert of the pop orchestra",
+        "excerpt": "The annual reporting concert of the institute's pop orchestra took place on the big stage..."
+      },
+      "2": {
+        "title": "Presentation of a new music album",
+        "excerpt": "A new music collection prepared on the basis of the 'Master-Apprentice' tradition..."
+      },
+      "3": {
+        "title": "Master class: Jazz Improvisation",
+        "excerpt": "A special master class for students with the participation of a famous jazz performer..."
       }
     }
   },
   "leadership": {
     "tag": "Leadership",
     "title": "Institute Leadership",
-    "roles": {
-      "rector": "Rector",
-      "vice_academic": "Vice-Rector for Academic Affairs",
-      "vice_science": "Vice-Rector for Scientific Affairs"
-    },
-    "desc": {
-      "1": "Doctor of Art History, Professor. Has 20 years of scientific and pedagogical experience.",
-      "2": "Candidate of Philosophical Sciences. Expert on digitalization of the education system.",
-      "3": "Professor. Organizer of international music conferences."
+    "items": {
+      "1": {
+        "name": "Mansurov Avaz Maksudovich",
+        "role": "Rector of the Batyr Zakirov National Institute of Pop Art under the State Conservatory of Uzbekistan",
+        "title": "Honored Cultural Worker of the Republic of Uzbekistan, Professor",
+        "time": "Monday 9:00 AM - 6:00 PM"
+      },
+      "2": {
+        "name": "Qurbonova Feruza Xayrullayevna",
+        "role": "First Vice-Rector for Youth Affairs and Spiritual-Educational Work",
+        "title": "",
+        "time": "Monday 3:00 PM - 5:00 PM"
+      },
+      "3": {
+        "name": "Mirzayev Akbarjon Abduraximovich",
+        "role": "Vice-Rector for Academic Affairs",
+        "title": "Associate Professor",
+        "time": "Tuesday 3:00 PM - 5:00 PM"
+      },
+      "4": {
+        "name": "Muxamedova Feruza Nurmaxmatovna",
+        "role": "Vice-Rector for Scientific Affairs and Innovations",
+        "title": "PhD in Art History",
+        "time": "Wednesday 2:00 PM - 4:00 PM"
+      },
+      "5": {
+        "name": "Tursunbayev Ilxom Karimovich",
+        "role": "Head of Administrative Department",
+        "title": "",
+        "time": "Daily 10:00 AM - 3:00 PM"
+      }
+    }
+  },
+  "history": {
+    "title": "Institute History",
+    "intro1": "By the <1>Decree of the President of the Republic of Uzbekistan No. PQ-5261 dated October 16, 2021</1>, the Batyr Zakirov National Institute of Pop Art was established under the State Conservatory of Uzbekistan.",
+    "intro2": "At the opening ceremony of the Batyr Zakirov National Institute of Pop Art, the President of the Republic of Uzbekistan Shavkat Mirziyoyev said the following about the pop singer Batyr Zakirov:",
+    "quote": "“Fate entrusted Batyr Zakirov with the glorious task of becoming the founder of Uzbek pop art, and he fulfilled this task with honor. <1/> Thanks to the unique talent and human qualities bestowed upon him by Allah, Batyr Zakirov created true miracles in the art world.”",
+    "president_signature": "President of the Republic of Uzbekistan Shavkat Mirziyoyev",
+    "btn_speech": "Full Speech",
+    "image_caption": "President of the Republic of Uzbekistan Shavkat Mirziyoyev at the opening ceremony of the Botir Zakirov monument",
+    "timeline": {
+      "0": {
+        "year": "1885",
+        "title": "Uzbek Pop Music",
+        "description": "Uzbek pop music has a rich 100-year history. It should be noted that the early forms of this art, unlike modern perceptions, demonstrated superficial forms of pop. The pop works that modern audiences see and hear on stage today are the result of the influence of culture from different eras, changes in political and social realities, as well as years of hard work and research by talented individuals."
+      },
+      "1": {
+        "year": "1997",
+        "title": "Department of Pop Performance at the Tashkent State Conservatory",
+        "description": "Initially, the Department of Pop Performance began its activities at the Mukhtar Ashrafi Tashkent State Conservatory. Thus, starting from 1997, for the first time in Uzbekistan, the teaching of the history of pop music art was established in the higher education system."
+      },
+      "2": {
+        "year": "2002-2021",
+        "title": "“Pop Art” Faculty within the State Conservatory of Uzbekistan",
+        "description": "In 2002, in connection with granting the Tashkent State Conservatory the status of the State Conservatory of Uzbekistan and the commissioning of a new building, the “Pop Art” faculty was introduced into the structure, operating until 2021."
+      },
+      "3": {
+        "year": "2021",
+        "title": "Decree of the President of the Republic of Uzbekistan",
+        "description": "On the basis of the “Pop Art” faculty, by the Decree of the President of the Republic of Uzbekistan No. PQ-5261 dated October 16, 2021, the Batyr Zakirov National Institute of Pop Art was established under the State Conservatory of Uzbekistan."
+      },
+      "4": {
+        "year": "2022-2023",
+        "title": "Undergraduate and Graduate Directions of the Institute Determined",
+        "description": "In 2022-2023, a number of new specialties and directions for bachelors and masters were approved. Currently, the Batyr Zakirov National Institute of Pop Art trains highly qualified specialists in the directions of: pop singing, pop instrumental performance, composition, musicology, pop orchestra conducting, musical sound engineering, and training of pop performance teachers."
+      }
     }
   },
   "gallery": {

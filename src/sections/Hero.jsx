@@ -27,23 +27,23 @@ const Hero = () => {
         {
             id: 1,
             image: botirImg,
-            title: "Botir Zokirov",
-            subtitle: "Milliy estrada san'ati asoschisi va betakror ovoz sohibi",
-            tag: "Buyuk San'atkor"
+            title: t('hero.slide1.title'),
+            subtitle: t('hero.slide1.subtitle'),
+            tag: t('hero.slide1.tag')
         },
         {
             id: 2,
             image: estradaImg,
-            title: "Zamonaviy Estrada",
-            subtitle: "Professional vokal, sahna madaniyati va yangi yulduzlar",
-            tag: "Ijodiy Muhit"
+            title: t('hero.slide2.title'),
+            subtitle: t('hero.slide2.subtitle'),
+            tag: t('hero.slide2.tag')
         },
         {
             id: 3,
             image: jazzImg,
-            title: "Jazz Orkestri",
-            subtitle: "Jonli ijro, improvizatsiya va musiqiy uyg'unlik",
-            tag: "Jazz & Blues"
+            title: t('hero.slide3.title'),
+            subtitle: t('hero.slide3.subtitle'),
+            tag: t('hero.slide3.tag')
         }
     ];
 
@@ -88,7 +88,7 @@ const Hero = () => {
                                             onClick={togglePlay}
                                             icon={isPlaying ? <PauseCircleOutlined /> : <PlayCircleOutlined />}
                                         >
-                                            {isPlaying ? "Musiqani to'xtatish" : "Maftun Bo'ldim (Tinglash)"}
+                                            {isPlaying ? t('hero.btn_music_stop') : t('hero.btn_music_play')}
                                         </Button>
                                     </div>
                                 </div>
@@ -101,8 +101,8 @@ const Hero = () => {
             {/* Floating Music Widget */}
             <div className="absolute bottom-10 right-10 z-30 hidden md:flex items-center gap-3 bg-black/40 backdrop-blur-md p-2 pl-4 rounded-full border border-white/10 animate-pulse">
                 <div className="flex flex-col">
-                    <span className="text-xs text-accent font-bold uppercase tracking-wider">Hozir yangramoqda</span>
-                    <span className="text-sm text-white font-medium">Botir Zokirov - Maftun Bo'ldim</span>
+                    <span className="text-xs text-accent font-bold uppercase tracking-wider">{t('hero.music_now_playing')}</span>
+                    <span className="text-sm text-white font-medium">{t('hero.music_title')}</span>
                 </div>
                 <Button
                     type="primary"
