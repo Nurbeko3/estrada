@@ -9,6 +9,7 @@ import Hero from './sections/Hero';
 import News from './sections/News';
 import Leadership from './sections/Leadership';
 import Gallery from './sections/Gallery';
+import MapSection from './sections/MapSection';
 import Footer from './components/Footer';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <News />
           <Leadership />
           <Gallery />
+          <MapSection />
         </main>
         <Footer />
       </div>

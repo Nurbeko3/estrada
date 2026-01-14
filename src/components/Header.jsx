@@ -15,7 +15,7 @@ const Header = () => {
     // Handle scroll effect for header
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > 20);
+            setScrolled(window.scrollY > 50);
         };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
@@ -31,15 +31,30 @@ const Header = () => {
         { key: 'en', label: 'English', onClick: changeLanguage },
     ];
 
+    const currentYear = new Date().getFullYear();
+
+    const admissionItems = [
+        { key: '5-1', label: <a href="#call_center">{t('header.menu.sub.call_center')}</a> },
+        { key: '5-2', label: <a href="#quotas">{t('header.menu.sub.quotas')}</a> },
+        { key: '5-3', label: <a href="#foreign_admission">{t('header.menu.sub.foreign_admission')}</a> },
+        { key: '5-4', label: <a href="#programs">{t('header.menu.sub.programs')}</a> },
+        { key: '5-5', label: <a href="#exam_broadcast">{t('header.menu.sub.exam_broadcast')}</a> },
+        { key: '5-6', label: <a href="#competitions">{t('header.menu.sub.competitions')}</a> },
+    ];
+
     const menuLinks = [
         { label: t('header.menu.home'), href: "#" },
         {
             label: t('header.menu.institute'),
             key: 'institute',
             children: [
-                { key: '1-1', label: <a href="#about">{t('header.menu.sub.about')}</a> },
+                { key: '1-1', label: <a href="#structure">{t('header.menu.sub.structure')}</a> },
                 { key: '1-2', label: <a href="#leadership">{t('header.menu.sub.leadership')}</a> },
-                { key: '1-3', label: <a href="#structure">{t('header.menu.sub.structure')}</a> },
+                { key: '1-3', label: <a href="#history">{t('header.menu.sub.history')}</a> },
+                { key: '1-4', label: <a href="#docs">{t('header.menu.sub.docs')}</a> },
+                { key: '1-5', label: <a href="#coop">{t('header.menu.sub.coop')}</a> },
+                { key: '1-6', label: <a href="#links">{t('header.menu.sub.links')}</a> },
+                { key: '1-7', label: <a href="#zakirov">{t('header.menu.sub.zakirov')}</a> },
             ]
         },
         {
@@ -48,16 +63,18 @@ const Header = () => {
             children: [
                 { key: '2-1', label: <a href="#bachelor">{t('header.menu.sub.bachelor')}</a> },
                 { key: '2-2', label: <a href="#master">{t('header.menu.sub.master')}</a> },
-                { key: '2-3', label: <a href="#curriculum">{t('header.menu.sub.curriculum')}</a> },
+                { key: '2-3', label: <a href="#schedule">{t('header.menu.sub.schedule')}</a> },
+                { key: '2-4', label: <a href="#graduates">{t('header.menu.sub.graduates')}</a> },
             ]
         },
         {
             label: t('header.menu.science'),
             key: 'science',
             children: [
-                { key: '3-1', label: <a href="#council">{t('header.menu.sub.council')}</a> },
-                { key: '3-2', label: <a href="#projects">{t('header.menu.sub.projects')}</a> },
-                { key: '3-3', label: <a href="#conferences">{t('header.menu.sub.conferences')}</a> },
+                { key: '3-1', label: <a href="#research">{t('header.menu.sub.research')}</a> },
+                { key: '3-2', label: <a href="#councils">{t('header.menu.sub.councils')}</a> },
+                { key: '3-3', label: <a href="#journals">{t('header.menu.sub.journals')}</a> },
+                { key: '3-4', label: <a href="#projects">{t('header.menu.sub.projects')}</a> },
             ]
         },
         {
@@ -65,26 +82,23 @@ const Header = () => {
             key: 'info_service',
             children: [
                 { key: '4-1', label: <a href="#news">{t('header.menu.sub.news')}</a> },
-                { key: '4-2', label: <a href="#announcements">{t('header.menu.sub.announcements')}</a> },
-                { key: '4-3', label: <a href="#press">{t('header.menu.sub.press')}</a> },
-            ]
-        },
-        {
-            label: t('header.menu.admission_year'),
-            key: 'admission',
-            children: [
-                { key: '5-1', label: <a href="#commission">{t('header.menu.sub.commission')}</a> },
-                { key: '5-2', label: <a href="#directions">{t('header.menu.sub.directions')}</a> },
-                { key: '5-3', label: <a href="#quotas">{t('header.menu.sub.quotas')}</a> },
+                { key: '4-2', label: <a href="#events">{t('header.menu.sub.events')}</a> },
+                { key: '4-3', label: <a href="#media">{t('header.menu.sub.media')}</a> },
+                { key: '4-4', label: <a href="#contact">{t('header.menu.sub.contact')}</a> },
+                { key: '4-5', label: <a href="#mandate">{t('header.menu.sub.mandate')}</a> },
+                { key: '4-6', label: <a href="#grant_results">{t('header.menu.sub.grant_results')}</a> },
             ]
         },
         {
             label: t('header.menu.students'),
             key: 'students',
             children: [
-                { key: '6-1', label: <a href="#dorm">{t('header.menu.sub.dorm')}</a> },
-                { key: '6-2', label: <a href="#talented">{t('header.menu.sub.talented')}</a> },
-                { key: '6-3', label: <a href="#clubs">{t('header.menu.sub.clubs')}</a> },
+                { key: '6-1', label: <a href="#eco_students">{t('header.menu.sub.eco_students')}</a> },
+                { key: '6-2', label: <a href="#foreign_students">{t('header.menu.sub.foreign_students')}</a> },
+                { key: '6-3', label: <a href="#grant_app">{t('header.menu.sub.grant_app')}</a> },
+                { key: '6-4', label: <a href="#achievements">{t('header.menu.sub.achievements')}</a> },
+                { key: '6-5', label: <a href="#grant_test">{t('header.menu.sub.grant_test')}</a> },
+                { key: '6-6', label: <a href="#appeal">{t('header.menu.sub.appeal')}</a> },
             ]
         },
     ];
@@ -104,15 +118,30 @@ const Header = () => {
                 <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
 
                     {/* Logo Section */}
-                    <div className="flex items-center gap-4">
-                        <div className={`relative flex items-center justify-center rounded-full font-extrabold text-xl transition-all duration-500 overflow-hidden ${scrolled ? 'w-10 h-10 shadow-md' : 'w-12 h-12 border border-white/30 shadow-lg'
+                    <div className="flex items-center gap-3 md:gap-4 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                        <div className={`relative flex-shrink-0 flex items-center justify-center rounded-full overflow-hidden border-2 border-white/20 transition-all duration-500 bg-white ${scrolled
+                            ? 'w-12 h-12 shadow-md'
+                            : 'w-16 h-16 shadow-2xl'
                             }`}>
-                            <img src={Logo} alt="Logo" className="w-full h-full object-cover" />
+                            <img
+                                src={Logo}
+                                alt="Batyr Zakirov Institute"
+                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            />
                         </div>
-                        <div className={`leading-tight uppercase font-bold transition-colors duration-500 flex flex-col ${scrolled ? 'text-primary dark:text-white' : 'text-white'
+                        <div className={`leading-tight uppercase font-bold transition-all duration-500 flex flex-col ${scrolled
+                            ? 'text-primary dark:text-white'
+                            : 'text-white'
                             }`}>
-                            <span className="text-[10px] md:text-xs tracking-[0.2em] font-medium opacity-90">{t('header.title')}</span>
-                            <span className="text-sm md:text-base tracking-wide">{t('header.subtitle')}</span>
+                            <span className="text-[10px] md:text-xs tracking-[0.2em] font-semibold opacity-80 mb-0.5 text-accent/90">
+                                {t('header.title')}
+                            </span>
+                            <span className={`font-sans tracking-wider uppercase transition-all duration-500 ${scrolled
+                                ? 'text-xs md:text-sm font-bold'
+                                : 'text-sm md:text-base font-extrabold text-shadow-lg'
+                                }`}>
+                                {t('header.subtitle')}
+                            </span>
                         </div>
                     </div>
 
@@ -169,9 +198,11 @@ const Header = () => {
                             </Button>
                         </Dropdown>
 
-                        <Button type="primary" size="large" className="bg-accent hover:bg-[#a08550] border-none shadow-lg shadow-accent/20 rounded-full px-8 font-semibold tracking-wide transform hover:-translate-y-0.5 transition-all duration-300">
-                            {t('header.admission')}
-                        </Button>
+                        <Dropdown menu={{ items: admissionItems }} placement="bottomRight" arrow={{ pointAtCenter: true }}>
+                            <Button type="primary" size="large" className="bg-accent hover:bg-[#a08550] border-none shadow-lg shadow-accent/20 rounded-full px-8 font-semibold tracking-wide transform hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2">
+                                {t('header.menu.admission')} {currentYear} <DownOutlined className="text-xs" />
+                            </Button>
+                        </Dropdown>
                     </div>
 
                     {/* Mobile Menu Toggle */}

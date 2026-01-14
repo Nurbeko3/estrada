@@ -1,10 +1,17 @@
 import React from 'react';
-import { FacebookOutlined, InstagramOutlined, YoutubeOutlined, EnvironmentOutlined, PhoneOutlined, MailOutlined } from '@ant-design/icons';
+import { FacebookOutlined, InstagramOutlined, YoutubeOutlined, EnvironmentOutlined, PhoneOutlined, MailOutlined, ClockCircleOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
 import Logo from '../assets/images/Logo.jpg';
 
 const Footer = () => {
     const { t } = useTranslation();
+
+    const now = new Date();
+    const day = now.getDay(); // 0 is Sunday
+    const hour = now.getHours();
+
+    // Open if Mon-Sat (1-6) and 09:00 - 18:00
+    const isOpen = (day >= 1 && day <= 6) && (hour >= 9 && hour < 18);
 
     return (
         <footer id="contact" className="bg-[#1a1a1a] dark:bg-black text-white pt-16 pb-8 border-t border-gray-800 dark:border-gray-900 transition-colors duration-300">
@@ -60,7 +67,7 @@ const Footer = () => {
                                 <div className="p-2 bg-white/5 rounded-lg group-hover:bg-accent/20 transition-colors">
                                     <EnvironmentOutlined className="text-accent" />
                                 </div>
-                                <span>{t('footer.address')}</span>
+                                <span className="flex-1">{t('footer.address')}</span>
                             </li>
                             <li className="flex items-center gap-4 group">
                                 <div className="p-2 bg-white/5 rounded-lg group-hover:bg-accent/20 transition-colors">
@@ -77,12 +84,39 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* Column 4: Map Placeholder */}
+                    {/* Column 4: Working Hours */}
                     <div data-aos="fade-up" data-aos-delay="300">
-                        <h3 className="text-lg font-bold mb-6 text-white border-l-4 border-accent pl-3 uppercase tracking-wide">{t('footer.map_title')}</h3>
-                        <div className="w-full h-40 bg-gray-800 rounded-xl flex items-center justify-center border border-gray-700 overflow-hidden relative group">
-                            <div className="absolute inset-0 bg-[url('https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/69.2401,41.2995,12,0/400x200?access_token=YOUR_TOKEN')] bg-cover bg-center opacity-50 grayscale group-hover:grayscale-0 transition-all duration-700"></div>
-                            <span className="text-gray-400 text-sm relative z-10 glass px-4 py-2 rounded-lg">Google Maps</span>
+                        <h3 className="text-lg font-bold mb-6 text-white border-l-4 border-accent pl-3 uppercase tracking-wide">{t('footer.working_hours_title')}</h3>
+                        <div className="bg-gray-800/50 rounded-xl p-5 border border-gray-700/50 backdrop-blur-sm">
+                            <ul className="space-y-3 text-sm">
+                                <li className="flex justify-between items-center pb-2 border-b border-gray-700/50">
+                                    <span className="text-gray-400">{t('footer.working_days')}</span>
+                                    <span className="text-white font-semibold">{t('footer.working_time')}</span>
+                                </li>
+                                <li className="flex justify-between items-center pb-2 border-b border-gray-700/50">
+                                    <span className="text-gray-400">{t('footer.lunch')}</span>
+                                    <span className="text-accent font-medium"><ClockCircleOutlined className="mr-1" /> 13:00 - 14:00</span>
+                                </li>
+                                <li className="flex justify-between items-center pt-1">
+                                    <span className="text-gray-400 text-xs uppercase tracking-wide opacity-80">{t('footer.closed')}</span>
+                                </li>
+                            </ul>
+                            <div className="mt-4 pt-3 border-t border-gray-700/50 flex justify-center">
+                                {isOpen ? (
+                                    <span className="text-xs text-green-500 flex items-center gap-1.5 bg-green-500/10 px-3 py-1 rounded-full font-medium border border-green-500/20">
+                                        <span className="relative flex h-2 w-2">
+                                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                            <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                                        </span>
+                                        {t('footer.status_open')} ({t('footer.status_open', { lng: 'en' })})
+                                    </span>
+                                ) : (
+                                    <span className="text-xs text-red-500 flex items-center gap-1.5 bg-red-500/10 px-3 py-1 rounded-full font-medium border border-red-500/20">
+                                        <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                                        {t('footer.status_closed')} ({t('footer.status_closed', { lng: 'en' })})
+                                    </span>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>
