@@ -48,7 +48,6 @@ const Header = () => {
     ];
 
     const menuLinks = [
-        { label: <Link to="/">{t('header.menu.home')}</Link>, key: 'home' },
         {
             label: <Link to="/structure">{t('header.menu.institute')}</Link>,
             key: 'institute',
@@ -86,7 +85,7 @@ const Header = () => {
                 <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
 
                     {/* Logo Section */}
-                    <div className="flex items-center gap-3 md:gap-4 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                    <Link to="/" className="flex items-center gap-3 md:gap-4 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                         <div className={`relative flex-shrink-0 flex items-center justify-center rounded-full overflow-hidden border-2 border-white/20 transition-all duration-500 bg-white ${isHeaderSolid
                             ? 'w-12 h-12 shadow-md'
                             : 'w-16 h-16 shadow-2xl'
@@ -111,7 +110,7 @@ const Header = () => {
                                 {t('header.subtitle')}
                             </span>
                         </div>
-                    </div>
+                    </Link>
 
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex items-center gap-6 xl:gap-8">

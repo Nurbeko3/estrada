@@ -11,12 +11,15 @@ import muxamedovaImg from '../assets/images/muxamedova.jpg';
 import tursunbayevImg from '../assets/images/tursunbayev.jpg';
 import tashkilEtishImg from '../assets/images/tashkil_etish.jpg';
 import prezidentQaroriImg from '../assets/images/Prezident_qarori.jpg';
-import guvohnomaPdf from '../assets/pdf/Б.Зокиров-ГУВОХНОМА-2022й.pdf';
-import buyruqPdf from '../assets/pdf/Буй_428_21_10_2021й_Мад_Вазири_Инс_таш_этиш.pdf';
-import buyruq498Pdf from '../assets/pdf/Buyruq 498.pdf';
-import ustavPdf from '../assets/pdf/Ustav-2022.pdf';
-import shartnomaPdf from '../assets/pdf/Shartnoma 2023-2025.pdf';
-import tuzilmaPdf from '../assets/pdf/Янги-MESI-Tuzilmasi-04.04.2022.pdf';
+
+// PDF Files (Moved to public for better serving and renamed to avoid encoding issues)
+const guvohnomaPdf = '/assets/pdf/zakirov_certificate_2022.pdf';
+const buyruqPdf = '/assets/pdf/order_428_2021.pdf';
+const buyruq498Pdf = '/assets/pdf/order_498.pdf';
+const ustavPdf = '/assets/pdf/charter_2022.pdf';
+const shartnomaPdf = '/assets/pdf/agreement_2023_2025.pdf';
+const tuzilmaPdf = '/assets/pdf/structure_2022.pdf';
+
 import gerbLogo from '../assets/images/gerb-logo.jpg';
 import oliyLogo from '../assets/images/oliy-logo.jpg';
 import madaniyatLogo from '../assets/images/madaniyat-logo.jpg';
