@@ -50,61 +50,24 @@ const Header = () => {
     const menuLinks = [
         { label: <Link to="/">{t('header.menu.home')}</Link>, key: 'home' },
         {
-            label: t('header.menu.institute'),
+            label: <Link to="/structure">{t('header.menu.institute')}</Link>,
             key: 'institute',
-            children: [
-                { key: '1-1', label: <a href="/#structure">{t('header.menu.sub.structure')}</a> },
-                { key: '1-2', label: <Link to="/leadership">{t('header.menu.sub.leadership')}</Link> },
-                { key: '1-3', label: <Link to="/history">{t('header.menu.sub.history')}</Link> },
-                { key: '1-4', label: <a href="/#docs">{t('header.menu.sub.docs')}</a> },
-                { key: '1-5', label: <a href="/#coop">{t('header.menu.sub.coop')}</a> },
-                { key: '1-6', label: <a href="/#links">{t('header.menu.sub.links')}</a> },
-                { key: '1-7', label: <a href="/#zakirov">{t('header.menu.sub.zakirov')}</a> },
-            ]
         },
         {
-            label: t('header.menu.education'),
+            label: <Link to="/education">{t('header.menu.education')}</Link>,
             key: 'education',
-            children: [
-                { key: '2-1', label: <a href="/#bachelor">{t('header.menu.sub.bachelor')}</a> },
-                { key: '2-2', label: <a href="/#master">{t('header.menu.sub.master')}</a> },
-                { key: '2-3', label: <a href="/#schedule">{t('header.menu.sub.schedule')}</a> },
-                { key: '2-4', label: <a href="/#graduates">{t('header.menu.sub.graduates')}</a> },
-            ]
         },
         {
-            label: t('header.menu.science'),
+            label: <Link to="/science">{t('header.menu.science')}</Link>,
             key: 'science',
-            children: [
-                { key: '3-1', label: <a href="/#research">{t('header.menu.sub.research')}</a> },
-                { key: '3-2', label: <a href="/#councils">{t('header.menu.sub.councils')}</a> },
-                { key: '3-3', label: <a href="/#journals">{t('header.menu.sub.journals')}</a> },
-                { key: '3-4', label: <a href="/#projects">{t('header.menu.sub.projects')}</a> },
-            ]
         },
         {
-            label: t('header.menu.info_service'),
+            label: <Link to="/info-service">{t('header.menu.info_service')}</Link>,
             key: 'info_service',
-            children: [
-                { key: '4-1', label: <a href="/#news">{t('header.menu.sub.news')}</a> },
-                { key: '4-2', label: <a href="/#events">{t('header.menu.sub.events')}</a> },
-                { key: '4-3', label: <a href="/#media">{t('header.menu.sub.media')}</a> },
-                { key: '4-4', label: <a href="/#contact">{t('header.menu.sub.contact')}</a> },
-                { key: '4-5', label: <a href="/#mandate">{t('header.menu.sub.mandate')}</a> },
-                { key: '4-6', label: <a href="/#grant_results">{t('header.menu.sub.grant_results')}</a> },
-            ]
         },
         {
-            label: t('header.menu.students'),
+            label: <Link to="/students">{t('header.menu.students')}</Link>,
             key: 'students',
-            children: [
-                { key: '6-1', label: <a href="/#eco_students">{t('header.menu.sub.eco_students')}</a> },
-                { key: '6-2', label: <a href="/#foreign_students">{t('header.menu.sub.foreign_students')}</a> },
-                { key: '6-3', label: <a href="/#grant_app">{t('header.menu.sub.grant_app')}</a> },
-                { key: '6-4', label: <a href="/#achievements">{t('header.menu.sub.achievements')}</a> },
-                { key: '6-5', label: <a href="/#grant_test">{t('header.menu.sub.grant_test')}</a> },
-                { key: '6-6', label: <a href="/#appeal">{t('header.menu.sub.appeal')}</a> },
-            ]
         },
     ];
 

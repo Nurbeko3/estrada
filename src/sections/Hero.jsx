@@ -2,9 +2,10 @@ import React, { useState, useRef } from 'react';
 import { Carousel, Button } from 'antd';
 import { ArrowRightOutlined, PlayCircleOutlined, PauseCircleOutlined, SoundOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
-import botirImg from '../assets/images/botir_zokirov.jpg';
-import estradaImg from '../assets/images/estrada_bg.jpg';
 import jazzImg from '../assets/images/jazz_bg.jpg';
+import statueImg from '../assets/images/Statue.jpg';
+import openingStatueImg from '../assets/images/opening_statue.jpg';
+import openedStatueImg from '../assets/images/opened_statue.jpg';
 import bgMusic from '../assets/music/botir-zokirov-maftun-boldim_(uzhits.net).mp3';
 
 const Hero = () => {
@@ -26,24 +27,31 @@ const Hero = () => {
     const slides = [
         {
             id: 1,
-            image: botirImg,
+            image: statueImg,
             title: t('hero.slide1.title'),
             subtitle: t('hero.slide1.subtitle'),
             tag: t('hero.slide1.tag')
         },
         {
             id: 2,
-            image: estradaImg,
+            image: jazzImg,
+            title: t('hero.slide3.title'),
+            subtitle: t('hero.slide3.subtitle'),
+            tag: t('hero.slide3.tag')
+        },
+        {
+            id: 3,
+            image: openingStatueImg,
             title: t('hero.slide2.title'),
             subtitle: t('hero.slide2.subtitle'),
             tag: t('hero.slide2.tag')
         },
         {
-            id: 3,
-            image: jazzImg,
-            title: t('hero.slide3.title'),
-            subtitle: t('hero.slide3.subtitle'),
-            tag: t('hero.slide3.tag')
+            id: 4,
+            image: openedStatueImg,
+            title: t('hero.slide1.title'),
+            subtitle: t('hero.slide1.subtitle'),
+            tag: t('hero.slide1.tag')
         }
     ];
 

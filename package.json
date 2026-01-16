@@ -13,6 +13,7 @@
     "@ant-design/icons": "^6.1.0",
     "antd": "^6.2.0",
     "aos": "^2.3.4",
+    "framer-motion": "^12.26.2",
     "i18next": "^25.7.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",

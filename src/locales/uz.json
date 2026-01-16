@@ -172,7 +172,7 @@
     "title": "Institut Tarixi",
     "intro1": "O‘zbekiston Respublikasi Prezidentining 2021-yil 16-oktabrdagi <1>PQ-5261-son qarori</1> bilan O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati instituti tashkil etildi.",
     "intro2": "O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati institutining ochilish marosimida O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev estrada hofizi Botir Zokirov haqida quyidagi so‘zlarni aytdi:",
-    "quote": "“Taqdir Botir Zokirovning zimmasiga o‘zbek estrada san’atining asoschisi bo‘lishdek ulug‘vor bir vazifani yukladi va bu vazifani u sharaf bilan ado etdi. <1/> Alloh taoloning o‘zi Botir Zokirovga ato etgan benazir iste’dod va insoniy fazilatlar tufayli u san’at olamida chinakam mo‘jizalar yaratdi.”",
+    "quote": "“Taqdir Botir Zokirovning zimmasiga o‘zbek estrada san’atining asoschisi bo‘lishdek ulug‘vor bir vazifani yukladi va bu vazifani u sharaf bilan ado etdi. Alloh taoloning o‘zi Botir Zokirovga ato etgan benazir iste’dod va insoniy fazilatlar tufayli u san’at olamida chinakam mo‘jizalar yaratdi.”",
     "president_signature": "O'zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev",
     "btn_speech": "To‘liq nutq",
     "image_caption": "O'zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev Botir Zokirov haykali ochilish marosimida",
@@ -209,6 +209,14 @@
     "title": "Institutning yorqin lahzalari",
     "btn_view_all": "Barcha rasmlarni ko'rish",
     "view": "Ko'rish"
+  },
+  "structure": {
+    "title": "Institut Tuzilmasi",
+    "menu": {
+      "main": "Institut Tuzilmasi",
+      "composition": "Tarkibiy Tuzilma",
+      "faculties": "Fakultet va Kafedralar"
+    }
   },
   "footer": {
     "desc": "O'zbekiston milliy estrada san'atini rivojlantirish, yosh iste'dodlarni kashf etish va ularni professional darajaga ko'tarish bizning asosiy maqsadimizdir.",
