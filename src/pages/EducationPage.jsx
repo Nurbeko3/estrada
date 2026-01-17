@@ -3,6 +3,9 @@ import { useTranslation } from 'react-i18next';
 import { Card, Typography } from 'antd';
 import { AppstoreOutlined, ReadOutlined, CalendarOutlined, SolutionOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
+import BachelorCurriculum from '../components/education/BachelorCurriculum';
+import MasterCurriculum from '../components/education/MasterCurriculum';
+import ScheduleComponent from '../components/education/ScheduleComponent';
 
 const { Title, Paragraph } = Typography;
 
@@ -35,13 +38,20 @@ const EducationPage = () => {
                 <Card className="shadow-2xl border-none rounded-2xl overflow-hidden glass-card">
                     <div className="p-8">
                         <div className="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-                            <p>Ushbu bo'limdagi ma'lumotlar tez orada joylashtiriladi.</p>
-                            <p className="opacity-70 italic">
-                                {selectedKey === 'bachelor' && "Bakalavriat yo'nalishlari haqida ma'lumotlar..."}
-                                {selectedKey === 'master' && "Magistratura mutaxassisliklari haqida ma'lumotlar..."}
-                                {selectedKey === 'schedule' && "Dars jadvallari (BA va MA bosqichlari uchun)..."}
-                                {selectedKey === 'graduates' && "Bitiruvchilar klubi va statistika..."}
-                            </p>
+                            {selectedKey === 'bachelor' ? (
+                                <BachelorCurriculum />
+                            ) : selectedKey === 'master' ? (
+                                <MasterCurriculum />
+                            ) : selectedKey === 'schedule' ? (
+                                <ScheduleComponent />
+                            ) : (
+                                <>
+                                    <p>Ushbu bo'limdagi ma'lumotlar tez orada joylashtiriladi.</p>
+                                    <p className="opacity-70 italic">
+                                        {selectedKey === 'graduates' && "Bitiruvchilar klubi va statistika..."}
+                                    </p>
+                                </>
+                            )}
                         </div>
                     </div>
                 </Card>

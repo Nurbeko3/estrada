@@ -1,18 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom'; // Added useLocation
 import { Card, Typography } from 'antd';
 import { NotificationOutlined, CalendarOutlined, PictureOutlined, PhoneOutlined, FileProtectOutlined, FileDoneOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
+
+import NewsListComponent from '../components/news/NewsListComponent';
+import MediaGalleryComponent from '../components/media/MediaGalleryComponent';
+import ContactComponent from '../components/contact/ContactComponent';
+import MandateComponent from '../components/mandate/MandateComponent';
 
 const { Title, Paragraph } = Typography;
 
 const InfoServicePage = () => {
     const { t } = useTranslation();
+    const location = useLocation(); // Hook to get URL info
     const [selectedKey, setSelectedKey] = useState('news');
+
+    // Effect to parse query parameter ?tab=...
+    useEffect(() => {
+        const searchParams = new URLSearchParams(location.search);
+        const tab = searchParams.get('tab');
+        if (tab) {
+            setSelectedKey(tab);
+        }
+    }, [location]);
 
     const menuItems = [
         { key: 'news', icon: <NotificationOutlined />, label: t('header.menu.sub.news') || "Yangiliklar" },
         { key: 'events', icon: <CalendarOutlined />, label: t('header.menu.sub.events') || "Tadbirlar" },
+        { key: 'announcements', icon: <NotificationOutlined rotate={180} />, label: "E'lonlar" }, // New Item
         { key: 'media', icon: <PictureOutlined />, label: t('header.menu.sub.media') || "Media Galereya" },
         { key: 'contact', icon: <PhoneOutlined />, label: t('header.menu.sub.contact') || "Bog'lanish" },
         { key: 'mandate', icon: <FileProtectOutlined />, label: t('header.menu.sub.mandate') || "Mandat" },
@@ -20,6 +37,18 @@ const InfoServicePage = () => {
     ];
 
     const renderContent = () => {
+        // Define category mapping for Supabase query
+        // 'news' -> 'news'
+        // 'events' -> 'event'
+        // 'announcements' -> 'announcement'
+        const categoryMap = {
+            'news': 'news',
+            'events': 'event',
+            'announcements': 'announcement'
+        };
+
+        const supabaseCategory = categoryMap[selectedKey];
+
         return (
             <motion.div
                 key={selectedKey}
@@ -34,21 +63,29 @@ const InfoServicePage = () => {
                     </h1>
                 </div>
 
-                <Card className="shadow-2xl border-none rounded-2xl overflow-hidden glass-card">
-                    <div className="p-8">
-                        <div className="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-                            <p>Ushbu bo'limdagi ma'lumotlar tez orada joylashtiriladi.</p>
-                            <p className="opacity-70 italic">
-                                {selectedKey === 'news' && "Eng so'nggi institut yangiliklari..."}
-                                {selectedKey === 'events' && "Bo'lib o'tadigan va o'tkazilgan tadbirlar..."}
-                                {selectedKey === 'media' && "Foto va video lavhalar..."}
-                                {selectedKey === 'contact' && "Matbuot xizmati bilan bog'lanish..."}
-                                {selectedKey === 'mandate' && "Mandat natijalari..."}
-                                {selectedKey === 'grant_results' && "Grant tanlovlari natijalari..."}
-                            </p>
+                {/* If selected key filters to a Supabase category, render NewsList */}
+                {supabaseCategory ? (
+                    <NewsListComponent category={supabaseCategory} />
+                ) : selectedKey === 'media' ? (
+                    <MediaGalleryComponent />
+                ) : selectedKey === 'contact' ? (
+                    <ContactComponent />
+                ) : selectedKey === 'mandate' ? (
+                    <MandateComponent />
+                ) : (
+                    <Card className="shadow-2xl border-none rounded-2xl overflow-hidden glass-card">
+                        <div className="p-8">
+                            <div className="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
+                                <p>Ushbu bo'limdagi ma'lumotlar tez orada joylashtiriladi.</p>
+                                <p className="opacity-70 italic">
+                                    {selectedKey === 'contact' && "Matbuot xizmati bilan bog'lanish..."}
+                                    {selectedKey === 'mandate' && "Mandat natijalari..."}
+                                    {selectedKey === 'grant_results' && "Grant tanlovlari natijalari..."}
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </Card>
+                    </Card>
+                )}
             </motion.div>
         );
     };

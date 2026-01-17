@@ -12,9 +12,13 @@ import EducationPage from './pages/EducationPage';
 import SciencePage from './pages/SciencePage';
 import InfoServicePage from './pages/InfoServicePage';
 import StudentsPage from './pages/StudentsPage';
+import { useSupabaseKeepAlive } from './hooks/useSupabaseKeepAlive';
 
 function App() {
   const { theme: currentTheme } = useTheme();
+
+  // Keep Supabase alive - ping every 6 hours to prevent sleep
+  useSupabaseKeepAlive();
 
   return (
     <ConfigProvider

@@ -41,6 +41,15 @@ import {
     ArrowRightOutlined,
     ExportOutlined
 } from '@ant-design/icons';
+import EstradaDepartment from '../components/departments/EstradaDepartment';
+import PedagogyDepartment from '../components/departments/PedagogyDepartment';
+import ConductingDepartment from '../components/departments/ConductingDepartment';
+import CompositionDepartment from '../components/departments/CompositionDepartment';
+import PianoDepartment from '../components/departments/PianoDepartment';
+import VocalDepartment from '../components/departments/VocalDepartment';
+import SoundEngineeringDepartment from '../components/departments/SoundEngineeringDepartment';
+import MusicTheoryDepartment from '../components/departments/MusicTheoryDepartment';
+import SocialSciencesDepartment from '../components/departments/SocialSciencesDepartment';
 
 const { Title, Paragraph } = Typography;
 
@@ -314,10 +323,30 @@ const StructurePage = () => {
                                     <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-6 border-b border-gray-100 dark:border-gray-700 pb-4">
                                         {selectedFacultyItem}
                                     </h1>
-                                    <div className="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-300">
-                                        <p>Ushbu kafedra/fakultet haqida batafsil ma'lumotlar tez orada joylashtiriladi.</p>
-                                        <p>Hozircha kafedra tuzilmasi, o'qituvchilar va yo'nalishlar bo'yicha ma'lumotlar tayyorlanmoqda.</p>
-                                    </div>
+                                    {selectedFacultyItem === 'Estrada cholg‘ularida ijrochilik kafedrasi' ? (
+                                        <EstradaDepartment />
+                                    ) : selectedFacultyItem === 'Estrada ijrochiligi pedagoglari tayyorlash kafedrasi' ? (
+                                        <PedagogyDepartment />
+                                    ) : selectedFacultyItem === 'Orkestr dirijyorligi kafedrasi' ? (
+                                        <ConductingDepartment />
+                                    ) : selectedFacultyItem === 'Kompozitorlik va aranjirovka kafedrasi' ? (
+                                        <CompositionDepartment />
+                                    ) : selectedFacultyItem === 'Fakultetlararo fortepiano ijrochiligi kafedrasi' ? (
+                                        <PianoDepartment />
+                                    ) : selectedFacultyItem === 'Estrada xonandaligi kafedrasi' ? (
+                                        <VocalDepartment />
+                                    ) : selectedFacultyItem === 'Musiqiy ovoz rejissorligi kafedrasi' ? (
+                                        <SoundEngineeringDepartment />
+                                    ) : selectedFacultyItem === 'Musiqiy-nazariy va tarixiy fanlar kafedrasi' ? (
+                                        <MusicTheoryDepartment />
+                                    ) : selectedFacultyItem === 'O‘zbek tili va ijtimoiy fanlar kafedrasi' ? (
+                                        <SocialSciencesDepartment />
+                                    ) : (
+                                        <div className="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-300">
+                                            <p>Ushbu kafedra/fakultet haqida batafsil ma'lumotlar tez orada joylashtiriladi.</p>
+                                            <p>Hozircha kafedra tuzilmasi, o'qituvchilar va yo'nalishlar bo'yicha ma'lumotlar tayyorlanmoqda.</p>
+                                        </div>
+                                    )}
                                 </div>
                             </Card>
                         </motion.div>
