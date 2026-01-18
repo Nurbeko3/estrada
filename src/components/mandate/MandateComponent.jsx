@@ -5,7 +5,7 @@ import { FilePdfOutlined, DownloadOutlined, EyeOutlined } from '@ant-design/icon
 const { Title, Text, Paragraph } = Typography;
 
 // Dynamically import PDFs from mandat folder
-const pdfFiles = import.meta.glob('../../assets/pdf/mandat/*.pdf', { eager: true, as: 'url' });
+const pdfFiles = import.meta.glob('../../assets/pdf/mandat/*.pdf', { eager: true, query: '?url', import: 'default' });
 
 const MandateComponent = () => {
     // Convert the imported files to an array

@@ -5,7 +5,7 @@ import { FilePdfOutlined, DownloadOutlined, EyeOutlined, CalendarOutlined } from
 const { Title, Text, Paragraph } = Typography;
 
 // Dynamically import PDFs from dars_jadvali folder
-const pdfFiles = import.meta.glob('../../assets/pdf/dars_jadvali/*.pdf', { eager: true, as: 'url' });
+const pdfFiles = import.meta.glob('../../assets/pdf/dars_jadvali/*.pdf', { eager: true, query: '?url', import: 'default' });
 
 const ScheduleComponent = () => {
     // Convert the imported files to an array with proper naming

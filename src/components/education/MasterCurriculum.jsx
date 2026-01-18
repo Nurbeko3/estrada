@@ -9,7 +9,7 @@ import {
 const { Panel } = Collapse;
 
 // Dynamically import all PDFs from the magistr directory
-const pdfFiles = import.meta.glob('../../assets/pdf/magistr/**/*.pdf', { eager: true, as: 'url' });
+const pdfFiles = import.meta.glob('../../assets/pdf/magistr/**/*.pdf', { eager: true, query: '?url', import: 'default' });
 
 const MasterCurriculum = () => {
 
