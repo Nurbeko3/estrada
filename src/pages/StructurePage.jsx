@@ -63,12 +63,12 @@ const StructurePage = () => {
         { key: 'main', icon: <AppstoreOutlined />, label: t('structure.menu.main') },
         { key: 'composition', icon: <TeamOutlined />, label: t('structure.menu.composition') },
         { key: 'faculties', icon: <BankOutlined />, label: t('structure.menu.faculties') },
-        { key: 'leadership', icon: <UserOutlined />, label: "Rahbariyat" }, // t('header.menu.sub.leadership')
-        { key: 'history', icon: <HistoryOutlined />, label: "Institut Tarixi" }, // t('header.menu.sub.history')
-        { key: 'docs', icon: <FileTextOutlined />, label: "Me'yoriy-Huquqiy Hujjatlar" }, // t('header.menu.sub.docs')
-        { key: 'coop', icon: <GlobalOutlined />, label: "Xalqaro Hamkorlik" }, // t('header.menu.sub.coop')
-        { key: 'links', icon: <LinkOutlined />, label: "Foydali Havolalar" }, // t('header.menu.sub.links')
-        { key: 'zakirov', icon: <CustomerServiceOutlined />, label: "Botir Zokirov Hayoti Va Ijodi" }, // t('header.menu.sub.zakirov')
+        { key: 'leadership', icon: <UserOutlined />, label: t('header.menu.sub.leadership') },
+        { key: 'history', icon: <HistoryOutlined />, label: t('header.menu.sub.history') },
+        { key: 'docs', icon: <FileTextOutlined />, label: t('header.menu.sub.docs') },
+        { key: 'coop', icon: <GlobalOutlined />, label: t('header.menu.sub.coop') },
+        { key: 'links', icon: <LinkOutlined />, label: t('header.menu.sub.links') },
+        { key: 'zakirov', icon: <CustomerServiceOutlined />, label: t('header.menu.sub.zakirov') },
     ];
 
     const renderContent = () => {
@@ -102,74 +102,74 @@ const StructurePage = () => {
             case 'composition':
                 const compositionData = [
                     {
-                        title: "Rektor",
+                        title: t('structure.composition.sections.1.title'),
                         items: [
-                            "O‘zDK huzuridagi MESI kengashi",
-                            "Vasiylik kengashi",
-                            "Rektor maslahat kengashi"
+                            { id: 'council', title: t('structure.composition.sections.1.items.1') },
+                            { id: 'trustee_council', title: t('structure.composition.sections.1.items.2') },
+                            { id: 'advisory_council', title: t('structure.composition.sections.1.items.3') }
                         ]
                     },
                     {
-                        title: "Yoshlar masalalari va ma’naviy-ma’rifiy ishlar bo’yicha birinchi prorektor",
+                        title: t('structure.composition.sections.2.title'),
                         items: [
-                            "Yoshlar bilan ishlash, ma’naviyat va ma’rifat bo‘limi",
-                            "Tyutorlar",
-                            "Botir Zokirov muzeyi",
-                            "Konsert-tijorat va reklama bo‘limi",
-                            "Jamoatchilik tashkilotlari va kengashlari"
+                            { id: 'youth_dept', title: t('structure.composition.sections.2.items.1') },
+                            { id: 'tutors', title: t('structure.composition.sections.2.items.2') },
+                            { id: 'museum', title: t('structure.composition.sections.2.items.3') },
+                            { id: 'concert_dept', title: t('structure.composition.sections.2.items.4') },
+                            { id: 'public_orgs', title: t('structure.composition.sections.2.items.5') }
                         ]
                     },
                     {
-                        title: "O‘quv ishlari bo‘yicha prorektor",
+                        title: t('structure.composition.sections.3.title'),
                         items: [
-                            "Fakultetlar va kafedralar",
-                            "O‘quv-uslubiy boshqarma",
-                            "Registrator Office",
-                            "O‘quv yordamchi xodimlar",
-                            "Axborot-resurs markazi",
-                            "Marketing va talabalar amaliyoti bo‘limi",
-                            "Video-fonetika bo‘limi",
-                            "Ovoz yozish studiyasi",
-                            "Sirtqi bo‘lim"
+                            { id: 'faculties_depts', title: t('structure.composition.sections.3.items.1') },
+                            { id: 'edu_admin', title: t('structure.composition.sections.3.items.2') },
+                            { id: 'registrar', title: t('structure.composition.sections.3.items.3') },
+                            { id: 'edu_support', title: t('structure.composition.sections.3.items.4') },
+                            { id: 'library', title: t('structure.composition.sections.3.items.5') },
+                            { id: 'marketing', title: t('structure.composition.sections.3.items.6') },
+                            { id: 'video_phonetics', title: t('structure.composition.sections.3.items.7') },
+                            { id: 'recording_studio', title: t('structure.composition.sections.3.items.8') },
+                            { id: 'correspondence_dept', title: t('structure.composition.sections.3.items.9') }
                         ]
                     },
                     {
-                        title: "Ilmiy ishlar va innovatsiyalar bo‘yicha prorektor",
+                        title: t('structure.composition.sections.4.title'),
                         items: [
-                            "Ilmiy-tadqiqotlar, innovatsiyalar va ilmiy-pedagogik kadrlar tayyorlash sektori",
-                            "Iqtidorli talabalarning ilmiy-tadqiqot faoliyatini tashkil etish sektori",
-                            "Magistratura bo‘limi",
-                            "Tahririy nashriyot bo‘limi",
-                            "Ilmiy-innovatsion ishlanmalarni tijoratlashtirish bo‘limi"
+                            { id: 'science_sector', title: t('structure.composition.sections.4.items.1') },
+                            { id: 'gifted_students', title: t('structure.composition.sections.4.items.2') },
+                            { id: 'masters', title: t('structure.composition.sections.4.items.3') },
+                            { id: 'publishing', title: t('structure.composition.sections.4.items.4') },
+                            { id: 'commercialization', title: t('structure.composition.sections.4.items.5') }
                         ]
                     },
                     {
-                        title: "Ishlar boshqarmasi boshlig‘i",
+                        title: t('structure.composition.sections.5.title'),
                         items: [
-                            "Reja moliya sektori",
-                            "Buxgalteriya",
-                            "Bosh muhandis",
-                            "Raqamli ta’lim texnologiyalari markazi",
-                            "Texnik foydalanish va xo‘jalik bo‘limi",
-                            "O‘qitishni texnik vositalari bo‘limi",
-                            "Fuqaro va mehnat muhofazasi bo‘limi",
-                            "Tibbiy xodim (hamshira)"
+                            { id: 'finance', title: t('structure.composition.sections.5.items.1') },
+                            { id: 'accounting', title: t('structure.composition.sections.5.items.2') },
+                            { id: 'engineer', title: t('structure.composition.sections.5.items.3') },
+                            { id: 'digital_center', title: t('structure.composition.sections.5.items.4') },
+                            { id: 'tech_dept', title: t('structure.composition.sections.5.items.5') },
+                            { id: 'tech_aids', title: t('structure.composition.sections.5.items.6') },
+                            { id: 'civil_defense', title: t('structure.composition.sections.5.items.7') },
+                            { id: 'medical', title: t('structure.composition.sections.5.items.8') }
                         ]
                     },
                     {
-                        title: "Boshqa bo‘limlar",
+                        title: t('structure.composition.sections.6.title'),
                         items: [
-                            "Ta’lim sifatini nazorat qilish bo‘limi",
-                            "Jismoniy va yuridik shaxslarning murojaatlari bilan ishlash, nazorat va monitoring sektori",
-                            "Devonxona va arxiv",
-                            "Xalqaro hamkorlik bo‘limi",
-                            "Xodimlar bo‘limi",
-                            "Yuriskonsult",
-                            "OTM kengashi kotibi",
-                            "Rektor maslahatchisi",
-                            "Matbuot kotibi",
-                            "Psixolog",
-                            "Korrupsiyaga qarshi kurashish"
+                            { id: 'quality_control', title: t('structure.composition.sections.6.items.1') },
+                            { id: 'appeals', title: t('structure.composition.sections.6.items.2') },
+                            { id: 'chancellery', title: t('structure.composition.sections.6.items.3') },
+                            { id: 'int_coop', title: t('structure.composition.sections.6.items.4') },
+                            { id: 'hr', title: t('structure.composition.sections.6.items.5') },
+                            { id: 'lawyer', title: t('structure.composition.sections.6.items.6') },
+                            { id: 'secretary', title: t('structure.composition.sections.6.items.7') },
+                            { id: 'advisor', title: t('structure.composition.sections.6.items.8') },
+                            { id: 'press_secretary', title: t('structure.composition.sections.6.items.9') },
+                            { id: 'psychologist', title: t('structure.composition.sections.6.items.10') },
+                            { id: 'anti_corruption', title: t('structure.composition.sections.6.items.11') }
                         ]
                     }
                 ];
@@ -186,17 +186,17 @@ const StructurePage = () => {
                                 className="flex items-center gap-2 text-accent hover:text-accent/80 font-bold mb-6 transition-colors group"
                             >
                                 <ArrowLeftOutlined className="group-hover:-translate-x-1 transition-transform" />
-                                Orqaga qaytish
+                                {t('structure.composition.static.back')}
                             </button>
 
                             <Card className="shadow-2xl border-none rounded-2xl overflow-hidden glass-card">
                                 <div className="p-8">
                                     <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-6 border-b border-gray-100 dark:border-gray-700 pb-4">
-                                        {selectedDepartment}
+                                        {selectedDepartment.title}
                                     </h1>
                                     <div className="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-300">
-                                        <p>Ushbu bo'lim haqida batafsil ma'lumotlar tez orada joylashtiriladi.</p>
-                                        <p>Hozircha bo'lim faoliyati, vazifalari va xodimlari haqidagi ma'lumotlar tayyorlanmoqda.</p>
+                                        <p>{t('structure.composition.static.details_coming_soon')}</p>
+                                        <p>{t('structure.composition.static.info_preparing')}</p>
                                     </div>
                                 </div>
                             </Card>
@@ -237,7 +237,7 @@ const StructurePage = () => {
                                                 className={`
                                                     group relative overflow-hidden rounded-2xl p-6 cursor-pointer transition-all duration-300
                                                     shadow-md hover:shadow-xl border flex items-center justify-between
-                                                    ${item.includes('muzeyi') || item.includes('Tibbiy')
+                                                    ${(item.id === 'museum' || item.id === 'medical')
                                                         ? 'bg-gradient-to-br from-[#c0a062] to-[#b08d4b] border-transparent'
                                                         : 'bg-white dark:bg-[#0f2a4a] border-gray-100 dark:border-gray-700 hover:border-[#c0a062]/50'
                                                     }
@@ -249,18 +249,18 @@ const StructurePage = () => {
                                                 <div className="relative z-10 flex-1 pr-4">
                                                     <span className={`
                                                         font-bold text-lg leading-snug transition-colors block
-                                                        ${item.includes('muzeyi') || item.includes('Tibbiy')
+                                                        ${(item.id === 'museum' || item.id === 'medical')
                                                             ? 'text-white'
                                                             : 'text-[#002140] dark:text-gray-100 group-hover:text-[#c0a062] dark:group-hover:text-[#d4b983]'
                                                         }
                                                     `}>
-                                                        {item}
+                                                        {item.title}
                                                     </span>
                                                 </div>
 
                                                 <div className={`
                                                     w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 shadow-sm
-                                                    ${item.includes('muzeyi') || item.includes('Tibbiy')
+                                                    ${(item.id === 'museum' || item.id === 'medical')
                                                         ? 'bg-white/20 text-white group-hover:bg-white group-hover:text-[#c0a062]'
                                                         : 'bg-[#002140]/5 dark:bg-white/5 text-[#002140] dark:text-white group-hover:bg-[#c0a062] group-hover:text-white'
                                                     }
@@ -269,7 +269,7 @@ const StructurePage = () => {
                                                 </div>
 
                                                 {/* Bottom accent line */}
-                                                {!item.includes('muzeyi') && !item.includes('Tibbiy') && (
+                                                {item.id !== 'museum' && item.id !== 'medical' && (
                                                     <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#c0a062] transition-all duration-300 group-hover:w-full"></div>
                                                 )}
                                             </motion.div>
@@ -283,22 +283,22 @@ const StructurePage = () => {
             case 'faculties':
                 const facultiesData = [
                     {
-                        title: "Estrada cholg‘u ijrochiligi fakulteti",
+                        title: t('structure.faculties.list.1.title'),
                         departments: [
-                            "Estrada cholg‘ularida ijrochilik kafedrasi",
-                            "Estrada ijrochiligi pedagoglari tayyorlash kafedrasi",
-                            "Kompozitorlik va aranjirovka kafedrasi",
-                            "Orkestr dirijyorligi kafedrasi",
-                            "Fakultetlararo fortepiano ijrochiligi kafedrasi"
+                            { id: 'dev_instrument', title: t('structure.faculties.list.1.departments.1') },
+                            { id: 'pedagogy', title: t('structure.faculties.list.1.departments.2') },
+                            { id: 'composition', title: t('structure.faculties.list.1.departments.3') },
+                            { id: 'conducting', title: t('structure.faculties.list.1.departments.4') },
+                            { id: 'piano', title: t('structure.faculties.list.1.departments.5') }
                         ]
                     },
                     {
-                        title: "Estrada xonandaligi fakulteti",
+                        title: t('structure.faculties.list.2.title'),
                         departments: [
-                            "Estrada xonandaligi kafedrasi",
-                            "Musiqiy ovoz rejissorligi kafedrasi",
-                            "Musiqiy-nazariy va tarixiy fanlar kafedrasi",
-                            "O‘zbek tili va ijtimoiy fanlar kafedrasi"
+                            { id: 'vocal', title: t('structure.faculties.list.2.departments.1') },
+                            { id: 'sound_engineering', title: t('structure.faculties.list.2.departments.2') },
+                            { id: 'music_theory', title: t('structure.faculties.list.2.departments.3') },
+                            { id: 'social_sciences', title: t('structure.faculties.list.2.departments.4') }
                         ]
                     }
                 ];
@@ -315,36 +315,36 @@ const StructurePage = () => {
                                 className="flex items-center gap-2 text-accent hover:text-accent/80 font-bold mb-6 transition-colors group"
                             >
                                 <ArrowLeftOutlined className="group-hover:-translate-x-1 transition-transform" />
-                                Orqaga qaytish
+                                {t('structure.faculties.static.back')}
                             </button>
 
                             <Card className="shadow-2xl border-none rounded-2xl overflow-hidden glass-card">
                                 <div className="p-8">
                                     <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-6 border-b border-gray-100 dark:border-gray-700 pb-4">
-                                        {selectedFacultyItem}
+                                        {selectedFacultyItem.title || selectedFacultyItem}
                                     </h1>
-                                    {selectedFacultyItem === 'Estrada cholg‘ularida ijrochilik kafedrasi' ? (
+                                    {selectedFacultyItem.id === 'dev_instrument' ? (
                                         <EstradaDepartment />
-                                    ) : selectedFacultyItem === 'Estrada ijrochiligi pedagoglari tayyorlash kafedrasi' ? (
+                                    ) : selectedFacultyItem.id === 'pedagogy' ? (
                                         <PedagogyDepartment />
-                                    ) : selectedFacultyItem === 'Orkestr dirijyorligi kafedrasi' ? (
+                                    ) : selectedFacultyItem.id === 'conducting' ? (
                                         <ConductingDepartment />
-                                    ) : selectedFacultyItem === 'Kompozitorlik va aranjirovka kafedrasi' ? (
+                                    ) : selectedFacultyItem.id === 'composition' ? (
                                         <CompositionDepartment />
-                                    ) : selectedFacultyItem === 'Fakultetlararo fortepiano ijrochiligi kafedrasi' ? (
+                                    ) : selectedFacultyItem.id === 'piano' ? (
                                         <PianoDepartment />
-                                    ) : selectedFacultyItem === 'Estrada xonandaligi kafedrasi' ? (
+                                    ) : selectedFacultyItem.id === 'vocal' ? (
                                         <VocalDepartment />
-                                    ) : selectedFacultyItem === 'Musiqiy ovoz rejissorligi kafedrasi' ? (
+                                    ) : selectedFacultyItem.id === 'sound_engineering' ? (
                                         <SoundEngineeringDepartment />
-                                    ) : selectedFacultyItem === 'Musiqiy-nazariy va tarixiy fanlar kafedrasi' ? (
+                                    ) : selectedFacultyItem.id === 'music_theory' ? (
                                         <MusicTheoryDepartment />
-                                    ) : selectedFacultyItem === 'O‘zbek tili va ijtimoiy fanlar kafedrasi' ? (
+                                    ) : selectedFacultyItem.id === 'social_sciences' ? (
                                         <SocialSciencesDepartment />
                                     ) : (
                                         <div className="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-300">
-                                            <p>Ushbu kafedra/fakultet haqida batafsil ma'lumotlar tez orada joylashtiriladi.</p>
-                                            <p>Hozircha kafedra tuzilmasi, o'qituvchilar va yo'nalishlar bo'yicha ma'lumotlar tayyorlanmoqda.</p>
+                                            <p>{t('structure.faculties.static.details_coming_soon')}</p>
+                                            <p>{t('structure.faculties.static.info_preparing')}</p>
                                         </div>
                                     )}
                                 </div>
@@ -377,7 +377,7 @@ const StructurePage = () => {
                                             <h2 className="text-2xl md:text-3xl font-bold text-[#002140] dark:text-white">
                                                 {faculty.title}
                                             </h2>
-                                            <p className="text-gray-500 dark:text-gray-400 font-medium">Fakultet kafedralari</p>
+                                            <p className="text-gray-500 dark:text-gray-400 font-medium">{t('structure.faculties.static.fac_departments')}</p>
                                         </div>
                                     </div>
 
@@ -391,8 +391,8 @@ const StructurePage = () => {
                                             <div className="absolute top-0 right-0 -mr-8 -mt-8 w-64 h-64 rounded-full bg-[#c0a062]/10 blur-3xl group-hover:bg-[#c0a062]/20 transition-colors"></div>
                                             <div className="relative z-10 flex justify-between items-center">
                                                 <div>
-                                                    <h3 className="text-xl font-bold text-white mb-2">Fakultet haqida umumiy ma'lumot</h3>
-                                                    <p className="text-gray-300">Dekanat, qabul vaqtlar va bog'lanish</p>
+                                                    <h3 className="text-xl font-bold text-white mb-2">{t('structure.faculties.static.general_info')}</h3>
+                                                    <p className="text-gray-300">{t('structure.faculties.static.deanery')}</p>
                                                 </div>
                                                 <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white group-hover:bg-[#c0a062] transition-colors">
                                                     <RightOutlined />
@@ -410,11 +410,11 @@ const StructurePage = () => {
                                                 <div className="absolute top-0 right-0 w-20 h-20 bg-[#c0a062]/5 rounded-bl-full -mr-4 -mt-4 transition-all group-hover:bg-[#c0a062]/10"></div>
 
                                                 <h3 className="font-bold text-lg leading-snug text-[#002140] dark:text-gray-100 group-hover:text-[#c0a062] dark:group-hover:text-[#d4b983] transition-colors relative z-10 pr-2">
-                                                    {dept}
+                                                    {dept.title}
                                                 </h3>
 
                                                 <div className="flex justify-between items-end mt-4">
-                                                    <span className="text-xs font-bold uppercase tracking-wider text-gray-400 group-hover:text-[#c0a062]">Kafedra</span>
+                                                    <span className="text-xs font-bold uppercase tracking-wider text-gray-400 group-hover:text-[#c0a062]">{t('structure.faculties.static.department')}</span>
                                                     <div className="w-8 h-8 rounded-full bg-[#002140]/5 dark:bg-white/5 flex items-center justify-center text-[#002140] dark:text-white group-hover:bg-[#c0a062] group-hover:text-white transition-all">
                                                         <RightOutlined className="text-xs" />
                                                     </div>
@@ -675,64 +675,29 @@ const StructurePage = () => {
                     </motion.div>
                 );
             case 'docs':
-                const docsData = [
-                    {
-                        title: "O‘zbekiston Respublikasining “Ta’lim to‘g‘risida” gi qonuni",
-                        code: "23.09.2020 yildagi O‘RQ-637-son",
-                        link: "https://lex.uz/docs/-5013007"
-                    },
-                    {
-                        title: "O‘zbekiston Respublikasining “Madaniy faoliyat va madaniyat tashkilotlari to‘g‘risida”gi qonuni",
-                        code: "20.01.2021 yildagi O‘RQ-668-son",
-                        link: "https://www.lex.uz/docs/-5230682"
-                    },
-                    {
-                        title: "O‘zbekiston Respublikasi Prezidentining “O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati institutini tashkil etish to‘g‘risida”gi qarori",
-                        code: "16.10.2021 yildagi PQ-5261-son",
-                        link: "https://lex.uz/uz/docs/-5680302"
-                    },
-                    {
-                        title: "O‘zbekiston Respublikasi Vazirlar Mahkamasining “Botir Zokirov nomidagi milliy estrada mukofotini ta’sis etish to‘g‘risida”gi qarori",
-                        code: "18.01.2024 yildagi 32-son",
-                        link: "https://lex.uz/uz/docs/-6764159"
-                    },
-                    {
-                        title: "O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati instituti",
-                        code: "Guvohnomasi",
-                        link: guvohnomaPdf,
-                        isPdf: true
-                    },
-                    {
-                        title: "O‘zbekiston Respublikasi madaniyat vaziri buyrug‘i",
-                        code: "Buyruq",
-                        link: buyruqPdf,
-                        isPdf: true
-                    },
-                    {
-                        title: "O‘zbekiston Respublikasi madaniyat vaziri buyrug‘i",
-                        code: "Ustavni tasdiqlash to'g'risida",
-                        link: buyruq498Pdf,
-                        isPdf: true
-                    },
-                    {
-                        title: "O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati instituti ustavi",
-                        code: "Ustav",
-                        link: ustavPdf,
-                        isPdf: true
-                    },
-                    {
-                        title: "O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati instituti 2023-2025 yillar uchun",
-                        code: "Jamoat shartnomasi",
-                        link: shartnomaPdf,
-                        isPdf: true
-                    },
-                    {
-                        title: "O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati instituti tarkibiy tuzilmasi",
-                        code: "Tarkibiy tuzilma",
-                        link: tuzilmaPdf,
-                        isPdf: true
-                    }
-                ];
+            case 'docs':
+                const docLinks = {
+                    1: "https://lex.uz/docs/-5013007",
+                    2: "https://www.lex.uz/docs/-5230682",
+                    3: "https://lex.uz/uz/docs/-5680302",
+                    4: "https://lex.uz/uz/docs/-6764159",
+                    5: guvohnomaPdf,
+                    6: buyruqPdf,
+                    7: buyruq498Pdf,
+                    8: ustavPdf,
+                    9: shartnomaPdf,
+                    10: tuzilmaPdf
+                };
+
+                const docsData = Array.from({ length: 10 }, (_, i) => {
+                    const id = i + 1;
+                    return {
+                        title: t(`structure.docs.items.${id}.title`),
+                        code: t(`structure.docs.items.${id}.code`),
+                        link: docLinks[id],
+                        isPdf: id >= 5
+                    };
+                });
 
                 return (
                     <motion.div
@@ -749,7 +714,7 @@ const StructurePage = () => {
 
                         <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl border border-gray-100 dark:border-gray-700">
                             <p className="text-gray-500 dark:text-gray-400 mb-8 font-medium uppercase tracking-wider text-sm">
-                                Meyoriy-huquqiy hujjatlar ro'yxati:
+                                {t('structure.docs.list_title')}
                             </p>
 
                             <div className="space-y-6">
@@ -774,7 +739,7 @@ const StructurePage = () => {
                                             target="_blank"
                                             className="bg-[#1b4332] hover:bg-[#1b4332]/90 border-none shadow-md flex items-center gap-2 min-w-[120px] justify-center h-12 text-base font-medium rounded-lg"
                                         >
-                                            O'qish <ExportOutlined />
+                                            {t('structure.docs.read')} <ExportOutlined />
                                         </Button>
                                     </div>
                                 ))}
@@ -805,6 +770,7 @@ const StructurePage = () => {
 
                                 <div className="flex flex-col md:flex-row gap-8 items-start relative z-10">
                                     <div className="flex-1 space-y-4">
+                                        <h2 className="text-xl font-bold text-[#002140] dark:text-white mb-2">{t('structure.coop.head_title')}</h2>
                                         <h3 className="text-3xl font-bold text-[#c0a062] tracking-wide">Abdullaeva Suraya Abdulaxadovna</h3>
 
                                         <div className="space-y-3 pt-2">
@@ -829,29 +795,21 @@ const StructurePage = () => {
                             <div className="bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-xl border border-gray-100 dark:border-gray-700">
                                 <div className="prose dark:prose-invert max-w-none">
                                     <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-8 border-l-4 border-[#c0a062] pl-6 italic bg-gray-50 dark:bg-white/5 py-4 rounded-r-xl">
-                                        Bo‘lim faoliyatining asosiy maqsadi institutning ta’lim dasturlari sifatini oshirishga qaratilgan xalqaro hamkorlik dasturlarida ishtirokini tashkil etish va muvofiqlashtirishdir.
+                                        {t('structure.coop.description')}
                                     </p>
 
                                     <h3 className="text-2xl font-bold text-[#002140] dark:text-white mb-6 flex items-center gap-3">
                                         <div className="w-2 h-2 rounded-full bg-[#c0a062]"></div>
-                                        Xalqaro bo‘limning asosiy vazifalari
+                                        {t('structure.coop.tasks_title')}
                                     </h3>
 
                                     <ul className="space-y-4 list-none pl-0">
-                                        {[
-                                            "Institut va xorijiy ta’lim muassasalari va xalqaro tashkilotlar bilan hamkorlik shartnomalari loyihalarini tayyorlash",
-                                            "Xalqaro hamkorlik dasturlarini shakllantirish",
-                                            "Xorijiy va xalqaro ijodiy loyihalar, tanlovlar, festivallar axborotni to‘plash va tizimlashtirish",
-                                            "Institut professor-o‘qituvchilarini xalqaro ta’lim va ijodiy faoliyatda ishtirok etishga jalb qilish",
-                                            "Institutning xalqaro faoliyati doirasida xodimlar, magistrantlar va talabalar uchun stajirovkalarni tashkil etish",
-                                            "Institutda xorijiy professor-o‘qituvchilari ta’lim va ijodiy faoliyatni tashkil etish",
-                                            "Elchixonalar va boshqa davlatlarning vakolatxonalari bilan hamkorlikni tashkil etish"
-                                        ].map((item, idx) => (
-                                            <li key={idx} className="flex gap-4 items-start text-gray-700 dark:text-gray-300 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-white/5 transition-colors border border-transparent hover:border-gray-100 dark:hover:border-gray-700 cursor-default">
+                                        {[1, 2, 3, 4, 5, 6, 7].map((id) => (
+                                            <li key={id} className="flex gap-4 items-start text-gray-700 dark:text-gray-300 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-white/5 transition-colors border border-transparent hover:border-gray-100 dark:hover:border-gray-700 cursor-default">
                                                 <div className="w-6 h-6 rounded-full bg-[#c0a062]/20 flex items-center justify-center flex-shrink-0 mt-0.5 text-[#c0a062]">
                                                     <div className="w-2 h-2 bg-[#c0a062] rounded-full"></div>
                                                 </div>
-                                                <span className="text-lg leading-snug">{item}</span>
+                                                <span className="text-lg leading-snug">{t(`structure.coop.tasks.${id}`)}</span>
                                             </li>
                                         ))}
                                     </ul>
@@ -861,40 +819,41 @@ const StructurePage = () => {
                     </motion.div>
                 );
             case 'links':
-                const linksData = [
+                const linksConfig = [
                     {
-                        title: "O‘zbekiston respublikasi davlat ramzlari",
-                        desc: "O‘zbekiston respublikasi davlat ramzlari: O‘zbekiston Respublikasi Konstitutsiyasi, davlat gerbi, davlat bayrog‘i, davlat madhiyasi, davlat konstutsiyasi haqida to‘liq ma’lumot.",
-                        source: "constitution.uz",
+                        id: 1,
                         url: "https://constitution.uz/oz",
                         logo: gerbLogo
                     },
                     {
-                        title: "O‘zbekiston respublikasi oliy ta’lim, fan va innovatsiyalar vazirligi",
-                        desc: "O‘zbekiston respublikasi oliy ta’lim, fan va innovatsiyalar vazirligi",
+                        id: 2,
                         url: "https://edu.uz/uz",
                         logo: oliyLogo
                     },
                     {
-                        title: "O‘zbekiston Respublikasi Madaniyat vazirligi",
-                        desc: "O‘zbekiston Respublikasi Madaniyat vazirligi",
+                        id: 3,
                         url: "https://gov.uz/oz/madaniyat",
                         logo: madaniyatLogo
                     },
                     {
-                        title: "O‘zbeknavo estrada birlashmasi",
-                        desc: "O‘zbeknavo estrada birlashmasi",
+                        id: 4,
                         url: "https://ihamkor.uz/ru/subject/718e6bb3ab38c8283279aaf2eaae2f2f?section=gi&n=O%27ZBEKNAVO+ESTRADA+BIRLASHMASI&u=1177499750",
                         logo: uzbeknavoLogo
                     },
                     {
-                        title: "O‘zbekiston Davlat Konservatoriyasi",
-                        desc: "O‘zbekiston Davlat Konservatoriyasi",
-                        footer: "Milliy estrada san'ati instituti ushbu muassasa huzurida ochilgan",
+                        id: 5,
                         url: "https://konservatoriya.uz/",
                         logo: konsLogo
                     }
                 ];
+
+                const linksData = linksConfig.map(config => ({
+                    ...config,
+                    title: t(`structure.links.items.${config.id}.title`),
+                    desc: t(`structure.links.items.${config.id}.desc`),
+                    source: config.id === 1 ? t(`structure.links.items.1.source`) : null,
+                    footer: config.id === 5 ? t(`structure.links.items.5.footer`) : null
+                }));
 
                 return (
                     <motion.div
@@ -976,30 +935,11 @@ const StructurePage = () => {
                         <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
                             {/* Text Content */}
                             <div className="xl:col-span-2 space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
-                                <p>
-                                    1936 yilda Alisher Navoiy nomidagi opera va balet teatri artisti Karim Zokirov va Muqumiy nomidagi musiqali drama teatri qo'shiqchisi Shoista Saidovalar xonadonida o'g'il farzand dunyoga keladi. To'ng'ich farzandlariga yaxshi niyatlar bilan Botir deb ism qo'yishadi.
-                                </p>
-                                <p>
-                                    Zokirovlar xonadoniga ko'plab san'at ahli namoyondalari tashrif buyurgani sababli Botirning ko'nglida ham musiqaga nisbatan kuchli muxabbat paydo bo'la boshlaydi. U 1952-1957 yillarda Toshkent Davlat konservatoriyasida, 1958- 1962 yillarda esa Toshkent Davlat teatr va rassomchilik institutlarida tahsil oladi. U “Yoshlik” ansambli va O’zbek Davlat estrada orkestrining yakkaxon xonandasi sifatida faoliyat olib borgan.
-                                </p>
-                                <p>
-                                    U 29 yoshida O’zbekiston xalq artisti unvoniga sazovor bo’lgan.
-                                </p>
-                                <p>
-                                    Botir Zokirov 1955-yilda og'ir dardga yo'liqqan. Bir necha marta jarrohlik amaliyotlarini boshidan o'tkazgan. Shifokorlar unga qo'shiq aytishni taqiqlagan. Lekin u ijoddan to'xtamagan.
-                                </p>
-                                <p>
-                                    U sharq folklori va zamonaviy estrada san'atini uyg'unlashtirib, “Myuzik xoll” ijodiy jamoasini tashkil etgan, xonanda va kompozitor sifatida ko'plab yoshlarga ustozlik qilgan. Respublikada xizmat ko'rsatgan “Yalla” ansamblining tashkil topishida uning xizmatlari katta bo'lgan.
-                                </p>
-                                <p>
-                                    San'atkorning xotirasini e'zozlash maqsadida 2021-yilda Botir Zokirovning 85 yillik tavallud ayyomi keng nishonlangan. Uning nomidagi milliy mukofot ta'sis etildi. U haqda ilmiy va badiiy asarlar, hujjatli film va spektakllar yaratildi.
-                                </p>
-                                <p>
-                                    Botir Zokirov tahsil olgan O’zbekiston davlat konservatoriyasi joylashgan ko'chaga uning nomi berildi. Ushbu konservatoriya huzurida Botir Zokirov nomidagi milliy estrada san’ati instituti barpo etildi.
-                                </p>
-                                <p>
-                                    2000-yilda “Buyuk xizmatlari uchun” va 2021-yilda “El-yurt hurmati” ordenlari bilan mukofotlangan. 1985- yilda — 49 yoshida vafot etgan.
-                                </p>
+                                {[1, 2, 3, 4, 5, 6, 7, 8].map((id) => (
+                                    <p key={id}>
+                                        {t(`structure.zakirov.bio.p${id}`)}
+                                    </p>
+                                ))}
                             </div>
 
                             {/* Right Column: Image and Quote */}
@@ -1014,13 +954,11 @@ const StructurePage = () => {
 
                                 <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-xl border-l-4 border-[#c0a062]">
                                     <p className="italic text-gray-600 dark:text-gray-300 font-medium leading-relaxed mb-6">
-                                        "Sehrli musiqani tinglab o'zingni yettinchi osmonda his etasan. Alamu og'riqlardan nishon yo'q, faqat ohanglar, ohanglar... Ohanglar erkin qush misol seni yuksaklarga eltadi. Ko'nglingdagi barcha g'uborlar yuvilib ketgan. Ko'zlaringdan sizayotgan yoshni sezasan...
-                                        <br /><br />
-                                        Bu dunyoda boshqa hech narsa yo'q! Bari ro'yo! Faqat, faqat musiqa qoldi. ...Yo'tal ohangga aralashib ketdi. Hechqisi yo'q. Axir, musiqa yangrayapti! Borliq qanchalar go'zal..."
+                                        <span dangerouslySetInnerHTML={{ __html: t('structure.zakirov.quote.text') }} />
                                     </p>
                                     <div>
-                                        <h4 className="font-bold text-[#002140] dark:text-white text-lg">Botir Zokirov</h4>
-                                        <p className="text-[#c0a062] font-medium text-sm">O'zbekiston xalq artisti</p>
+                                        <h4 className="font-bold text-[#002140] dark:text-white text-lg">{t('structure.zakirov.quote.author')}</h4>
+                                        <p className="text-[#c0a062] font-medium text-sm">{t('structure.zakirov.quote.title')}</p>
                                     </div>
                                 </div>
                             </div>

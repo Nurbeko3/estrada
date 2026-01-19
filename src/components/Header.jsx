@@ -32,6 +32,7 @@ const Header = () => {
 
     const langItems = [
         { key: 'uz', label: "O'zbek", onClick: changeLanguage },
+        { key: 'kr', label: 'Ўзбекча', onClick: changeLanguage },
         { key: 'ru', label: 'Русский', onClick: changeLanguage },
         { key: 'en', label: 'English', onClick: changeLanguage },
     ];

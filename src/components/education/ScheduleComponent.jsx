@@ -1,33 +1,36 @@
 import React from 'react';
 import { Card, Typography, Button, Tag } from 'antd';
+import { useTranslation } from 'react-i18next';
 import { FilePdfOutlined, DownloadOutlined, EyeOutlined, CalendarOutlined } from '@ant-design/icons';
 
 const { Title, Text, Paragraph } = Typography;
 
 // Dynamically import PDFs from dars_jadvali folder
-const pdfFiles = import.meta.glob('../../assets/pdf/dars_jadvali/*.pdf', { eager: true, as: 'url' });
+const pdfFiles = import.meta.glob('../../assets/pdf/dars_jadvali/*.pdf', { eager: true, query: '?url', import: 'default' });
 
 const ScheduleComponent = () => {
+    const { t } = useTranslation();
+
     // Convert the imported files to an array with proper naming
     const scheduleFiles = Object.keys(pdfFiles).map((path, index) => {
         const fileName = path.split('/').pop().replace('.pdf', '');
 
         // Determine group type from filename
-        let title = "Dars jadvali";
-        let description = "2025-2026 o'quv yili";
+        let title = t('header.education_page.schedule_items.general_group');
+        let description = "2025-2026";
         let groupType = "Umumiy";
         let color = "#1976d2";
 
         if (fileName.toLowerCase().includes("o'zbek") || fileName.toLowerCase().includes("uzbek")) {
-            title = "O'zbek guruhlari uchun dars jadvali";
+            title = t('header.education_page.schedule_items.uzbek_group');
             groupType = "O'zbek";
             color = "#2e7d32";
         } else if (fileName.toLowerCase().includes("rus")) {
-            title = "Rus guruhlari uchun dars jadvali";
+            title = t('header.education_page.schedule_items.russian_group');
             groupType = "Rus";
             color = "#c62828";
         } else if (fileName.toLowerCase().includes("ojiz") || fileName.toLowerCase().includes("nogir")) {
-            title = "Ko'zi ojiz talabalar uchun dars jadvali";
+            title = t('header.education_page.schedule_items.special_group');
             groupType = "Maxsus";
             color = "#7b1fa2";
         }
@@ -61,11 +64,11 @@ const ScheduleComponent = () => {
             <div>
                 <Title level={2} className="dark:text-white mb-2 flex items-center gap-3">
                     <CalendarOutlined className="text-accent" />
-                    Dars jadvali
+                    {t('header.education_page.schedule_title')}
                 </Title>
                 <div className="w-16 h-1 bg-accent rounded-full mb-4"></div>
                 <Paragraph className="text-gray-600 dark:text-gray-400 text-lg">
-                    2025-2026 o'quv yili uchun dars jadvallari. Jadvallarni ko'rish yoki yuklab olish mumkin.
+                    {t('header.education_page.schedule_desc')}
                 </Paragraph>
             </div>
 
@@ -97,7 +100,7 @@ const ScheduleComponent = () => {
                         {/* Group Type Badge */}
                         <div className="mb-4">
                             <Tag color={item.color} className="text-sm font-medium">
-                                {item.groupType} guruh
+                                {item.groupType}
                             </Tag>
                         </div>
 
@@ -109,14 +112,14 @@ const ScheduleComponent = () => {
                                 onClick={() => handleView(item.file)}
                                 className="flex-1 bg-accent border-accent hover:bg-accent/90"
                             >
-                                Ko'rish
+                                {t('header.education_page.schedule_labels.view')}
                             </Button>
                             <Button
                                 icon={<DownloadOutlined />}
                                 onClick={() => handleDownload(item.file, item.title)}
                                 className="flex-1"
                             >
-                                Yuklab olish
+                                {t('header.education_page.schedule_labels.download')}
                             </Button>
                         </div>
                     </Card>

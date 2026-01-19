@@ -1,34 +1,37 @@
 import React from 'react';
 import { Typography, Card } from 'antd';
 import { PhoneOutlined, MailOutlined, EnvironmentOutlined, PrinterOutlined } from '@ant-design/icons';
+import { useTranslation } from 'react-i18next';
 
 const { Title, Text, Paragraph } = Typography;
 
 const ContactComponent = () => {
+    const { t } = useTranslation();
+
     const contactInfo = [
         {
             icon: <PhoneOutlined />,
-            label: "Tel.",
+            label: t('header.contact_page.labels.tel'),
             value: "+998 71 200 00 00",
             color: "#c0a062"
         },
         {
             icon: <PrinterOutlined />,
-            label: "Faks",
+            label: t('header.contact_page.labels.fax'),
             value: "+998 71 200 00 00",
             color: "#2e7d32"
         },
         {
             icon: <MailOutlined />,
-            label: "E-mail",
+            label: t('header.contact_page.labels.email'),
             value: "info@estrada-art.uz",
             href: "mailto:info@estrada-art.uz",
             color: "#1976d2"
         },
         {
             icon: <EnvironmentOutlined />,
-            label: "Manzil",
-            value: "Toshkent 100027, Botir Zokirov ko'chasi 1-uy",
+            label: t('header.contact_page.labels.address'),
+            value: t('header.contact_page.values.address'),
             color: "#c0a062"
         }
     ];
@@ -37,10 +40,10 @@ const ContactComponent = () => {
         <div className="space-y-8">
             {/* Header */}
             <div>
-                <Title level={2} className="dark:text-white mb-2">Bog'lanish ma'lumotlari</Title>
+                <Title level={2} className="dark:text-white mb-2">{t('header.contact_page.title')}</Title>
                 <div className="w-16 h-1 bg-accent rounded-full mb-4"></div>
                 <Paragraph className="text-gray-600 dark:text-gray-400 text-lg">
-                    O'zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san'ati instituti
+                    {t('header.contact_page.subtitle')}
                 </Paragraph>
             </div>
 
@@ -73,7 +76,7 @@ const ContactComponent = () => {
             <Card className="border-none shadow-lg rounded-2xl overflow-hidden dark:bg-gray-800">
                 <div className="flex items-center gap-3 mb-4">
                     <EnvironmentOutlined className="text-2xl text-accent" />
-                    <Title level={4} className="m-0 dark:text-white">Bizning joylashuvimiz</Title>
+                    <Title level={4} className="m-0 dark:text-white">{t('header.contact_page.map.title')}</Title>
                 </div>
                 <div className="rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700">
                     <iframe
@@ -91,30 +94,30 @@ const ContactComponent = () => {
                 <div className="mt-4 flex items-start gap-3 text-gray-600 dark:text-gray-400">
                     <EnvironmentOutlined className="text-xl mt-1 text-accent" />
                     <div>
-                        <Text strong className="dark:text-white block">Toshkent 100027</Text>
-                        <Text className="dark:text-gray-400">Botir Zokirov ko'chasi 1-uy</Text>
+                        <Text strong className="dark:text-white block">{t('header.contact_page.map.city')}</Text>
+                        <Text className="dark:text-gray-400">{t('header.contact_page.map.street')}</Text>
                     </div>
                 </div>
             </Card>
 
             {/* Working Hours */}
             <Card className="border-none shadow-lg rounded-2xl dark:bg-gray-800">
-                <Title level={4} className="dark:text-white mb-4">Ish vaqti</Title>
+                <Title level={4} className="dark:text-white mb-4">{t('header.contact_page.hours.title')}</Title>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="flex justify-between items-center py-2 border-b border-gray-100 dark:border-gray-700">
-                        <Text className="text-gray-600 dark:text-gray-400">Dushanba - Juma</Text>
+                        <Text className="text-gray-600 dark:text-gray-400">{t('header.contact_page.hours.weekdays')}</Text>
                         <Text strong className="dark:text-white">09:00 - 18:00</Text>
                     </div>
                     <div className="flex justify-between items-center py-2 border-b border-gray-100 dark:border-gray-700">
-                        <Text className="text-gray-600 dark:text-gray-400">Shanba</Text>
+                        <Text className="text-gray-600 dark:text-gray-400">{t('header.contact_page.hours.saturday')}</Text>
                         <Text strong className="dark:text-white">09:00 - 14:00</Text>
                     </div>
                     <div className="flex justify-between items-center py-2 border-b border-gray-100 dark:border-gray-700">
-                        <Text className="text-gray-600 dark:text-gray-400">Yakshanba</Text>
-                        <Text strong className="text-red-500">Dam olish kuni</Text>
+                        <Text className="text-gray-600 dark:text-gray-400">{t('header.contact_page.hours.sunday')}</Text>
+                        <Text strong className="text-red-500">{t('header.contact_page.hours.closed')}</Text>
                     </div>
                     <div className="flex justify-between items-center py-2 border-b border-gray-100 dark:border-gray-700">
-                        <Text className="text-gray-600 dark:text-gray-400">Tushlik</Text>
+                        <Text className="text-gray-600 dark:text-gray-400">{t('header.contact_page.hours.lunch')}</Text>
                         <Text strong className="dark:text-white">13:00 - 14:00</Text>
                     </div>
                 </div>

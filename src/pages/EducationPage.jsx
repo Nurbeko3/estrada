@@ -14,10 +14,10 @@ const EducationPage = () => {
     const [selectedKey, setSelectedKey] = useState('bachelor');
 
     const menuItems = [
-        { key: 'bachelor', icon: <ReadOutlined />, label: t('header.menu.sub.bachelor') || "Bakalavriat" },
-        { key: 'master', icon: <ReadOutlined />, label: t('header.menu.sub.master') || "Magistratura" },
-        { key: 'schedule', icon: <CalendarOutlined />, label: t('header.menu.sub.schedule') || "Dars Jadvali" },
-        { key: 'graduates', icon: <SolutionOutlined />, label: t('header.menu.sub.graduates') || "Bitiruvchilar" },
+        { key: 'bachelor', icon: <ReadOutlined />, label: t('header.menu.sub.bachelor') },
+        { key: 'master', icon: <ReadOutlined />, label: t('header.menu.sub.master') },
+        { key: 'schedule', icon: <CalendarOutlined />, label: t('header.menu.sub.schedule') },
+        { key: 'graduates', icon: <SolutionOutlined />, label: t('header.menu.sub.graduates') },
     ];
 
     const renderContent = () => {
@@ -46,9 +46,9 @@ const EducationPage = () => {
                                 <ScheduleComponent />
                             ) : (
                                 <>
-                                    <p>Ushbu bo'limdagi ma'lumotlar tez orada joylashtiriladi.</p>
+                                    <p>{t('header.info_service.content_coming_soon')}</p>
                                     <p className="opacity-70 italic">
-                                        {selectedKey === 'graduates' && "Bitiruvchilar klubi va statistika..."}
+                                        {selectedKey === 'graduates' && t('header.education_page.graduates_placeholder')}
                                     </p>
                                 </>
                             )}

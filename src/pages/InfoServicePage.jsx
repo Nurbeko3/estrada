@@ -2,13 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom'; // Added useLocation
 import { Card, Typography } from 'antd';
-import { NotificationOutlined, CalendarOutlined, PictureOutlined, PhoneOutlined, FileProtectOutlined, FileDoneOutlined } from '@ant-design/icons';
+import { NotificationOutlined, CalendarOutlined, PictureOutlined, PhoneOutlined, FileDoneOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
 
 import NewsListComponent from '../components/news/NewsListComponent';
 import MediaGalleryComponent from '../components/media/MediaGalleryComponent';
 import ContactComponent from '../components/contact/ContactComponent';
-import MandateComponent from '../components/mandate/MandateComponent';
 
 const { Title, Paragraph } = Typography;
 
@@ -27,13 +26,12 @@ const InfoServicePage = () => {
     }, [location]);
 
     const menuItems = [
-        { key: 'news', icon: <NotificationOutlined />, label: t('header.menu.sub.news') || "Yangiliklar" },
-        { key: 'events', icon: <CalendarOutlined />, label: t('header.menu.sub.events') || "Tadbirlar" },
-        { key: 'announcements', icon: <NotificationOutlined rotate={180} />, label: "E'lonlar" }, // New Item
-        { key: 'media', icon: <PictureOutlined />, label: t('header.menu.sub.media') || "Media Galereya" },
-        { key: 'contact', icon: <PhoneOutlined />, label: t('header.menu.sub.contact') || "Bog'lanish" },
-        { key: 'mandate', icon: <FileProtectOutlined />, label: t('header.menu.sub.mandate') || "Mandat" },
-        { key: 'grant_results', icon: <FileDoneOutlined />, label: t('header.menu.sub.grant_results') || "Grant Natijalari" },
+        { key: 'news', icon: <NotificationOutlined />, label: t('header.menu.sub.news') },
+        { key: 'events', icon: <CalendarOutlined />, label: t('header.menu.sub.events') },
+        { key: 'announcements', icon: <NotificationOutlined rotate={180} />, label: t('header.menu.sub.announcements') },
+        { key: 'media', icon: <PictureOutlined />, label: t('header.menu.sub.media') },
+        { key: 'contact', icon: <PhoneOutlined />, label: t('header.menu.sub.contact') },
+        { key: 'grant_results', icon: <FileDoneOutlined />, label: t('header.menu.sub.grant_results') },
     ];
 
     const renderContent = () => {
@@ -70,17 +68,14 @@ const InfoServicePage = () => {
                     <MediaGalleryComponent />
                 ) : selectedKey === 'contact' ? (
                     <ContactComponent />
-                ) : selectedKey === 'mandate' ? (
-                    <MandateComponent />
                 ) : (
                     <Card className="shadow-2xl border-none rounded-2xl overflow-hidden glass-card">
                         <div className="p-8">
                             <div className="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-                                <p>Ushbu bo'limdagi ma'lumotlar tez orada joylashtiriladi.</p>
+                                <p>{t('header.info_service.content_coming_soon')}</p>
                                 <p className="opacity-70 italic">
-                                    {selectedKey === 'contact' && "Matbuot xizmati bilan bog'lanish..."}
-                                    {selectedKey === 'mandate' && "Mandat natijalari..."}
-                                    {selectedKey === 'grant_results' && "Grant tanlovlari natijalari..."}
+                                    {selectedKey === 'contact' && t('header.info_service.contact_placeholder')}
+                                    {selectedKey === 'grant_results' && t('header.info_service.grant_results_placeholder')}
                                 </p>
                             </div>
                         </div>

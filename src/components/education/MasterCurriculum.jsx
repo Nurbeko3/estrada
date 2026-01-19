@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import { Collapse, List, Button, Empty } from 'antd';
+import { useTranslation } from 'react-i18next';
 import {
     FilePdfOutlined,
     DownloadOutlined,
@@ -9,9 +10,10 @@ import {
 const { Panel } = Collapse;
 
 // Dynamically import all PDFs from the magistr directory
-const pdfFiles = import.meta.glob('../../assets/pdf/magistr/**/*.pdf', { eager: true, as: 'url' });
+const pdfFiles = import.meta.glob('../../assets/pdf/magistr/**/*.pdf', { eager: true, query: '?url', import: 'default' });
 
 const MasterCurriculum = () => {
+    const { t } = useTranslation();
 
     const curriculumData = useMemo(() => {
         const departments = {};
@@ -53,10 +55,10 @@ const MasterCurriculum = () => {
         <div className="space-y-6">
             <div>
                 <h2 className="text-2xl font-bold text-[#002140] dark:text-white mb-2">
-                    Magistratura mutaxassisliklari uchun o‘quv dasturlari
+                    {t('header.education_page.master_title')}
                 </h2>
                 <p className="text-gray-600 dark:text-gray-300">
-                    Magistratura bosqichi talabalari uchun fan dasturlari va o'quv-uslubiy majmualar.
+                    {t('header.education_page.master_desc')}
                 </p>
             </div>
 
@@ -73,7 +75,7 @@ const MasterCurriculum = () => {
                                     <FolderOpenOutlined className="text-xl text-accent" />
                                     <span className="font-semibold text-lg text-gray-800 dark:text-gray-200">{dept.name}</span>
                                     <span className="ml-auto text-xs text-gray-400 bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded-full">
-                                        {dept.documents.length} fayl
+                                        {dept.documents.length} {t('header.education_page.schedule_labels.file_count')}
                                     </span>
                                 </div>
                             }
@@ -109,7 +111,7 @@ const MasterCurriculum = () => {
                         </Panel>
                     ))
                 ) : (
-                    <Empty description="Fayllar topilmadi" />
+                    <Empty description={t('header.education_page.schedule_labels.files_not_found')} />
                 )}
             </Collapse>
         </div>

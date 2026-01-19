@@ -48,11 +48,65 @@
         "grant_app": "Заявка на грант",
         "achievements": "Отправить достижения студентов",
         "grant_test": "Тест на грант",
-        "appeal": "Апелляция"
+        "appeal": "Апелляция",
+        "announcements": "[TRANSLATION_MISSING] E'lonlar"
       }
     },
     "admission": "Прием 2026",
-    "mobile_menu_title": "Меню"
+    "mobile_menu_title": "Меню",
+    "info_service": {
+      "content_coming_soon": "[TRANSLATION_MISSING] Ushbu bo'limdagi ma'lumotlar tez orada joylashtiriladi.",
+      "contact_placeholder": "[TRANSLATION_MISSING] Matbuot xizmati bilan bog'lanish...",
+      "mandate_placeholder": "[TRANSLATION_MISSING] Mandat natijalari...",
+      "grant_results_placeholder": "[TRANSLATION_MISSING] Grant tanlovlari natijalari..."
+    },
+    "contact_page": {
+      "title": "[TRANSLATION_MISSING] Bog'lanish ma'lumotlari",
+      "subtitle": "[TRANSLATION_MISSING] O'zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san'ati instituti",
+      "labels": {
+        "tel": "[TRANSLATION_MISSING] Tel.",
+        "fax": "[TRANSLATION_MISSING] Faks",
+        "email": "[TRANSLATION_MISSING] E-mail",
+        "address": "[TRANSLATION_MISSING] Manzil"
+      },
+      "values": {
+        "address": "[TRANSLATION_MISSING] Toshkent 100027, Botir Zokirov ko'chasi 1-uy"
+      },
+      "map": {
+        "title": "[TRANSLATION_MISSING] Bizning joylashuvimiz",
+        "city": "[TRANSLATION_MISSING] Toshkent 100027",
+        "street": "[TRANSLATION_MISSING] Botir Zokirov ko'chasi 1-uy"
+      },
+      "hours": {
+        "title": "[TRANSLATION_MISSING] Ish vaqti",
+        "weekdays": "[TRANSLATION_MISSING] Dushanba - Juma",
+        "saturday": "[TRANSLATION_MISSING] Shanba",
+        "sunday": "[TRANSLATION_MISSING] Yakshanba",
+        "lunch": "[TRANSLATION_MISSING] Tushlik",
+        "closed": "[TRANSLATION_MISSING] Dam olish kuni"
+      }
+    },
+    "education_page": {
+      "graduates_placeholder": "[TRANSLATION_MISSING] Bitiruvchilar klubi va statistika...",
+      "bachelor_title": "[TRANSLATION_MISSING] Bakalavriat ta’lim yo‘nalishlari uchun o‘quv dasturlari",
+      "bachelor_desc": "[TRANSLATION_MISSING] Quyidagi ro'yxatdan tegishli kafedrani tanlab, fanlar bo'yicha o'quv dasturlarini (PDF) yuklab olishingiz mumkin.",
+      "master_title": "[TRANSLATION_MISSING] Magistratura mutaxassisliklari uchun o‘quv dasturlari",
+      "master_desc": "[TRANSLATION_MISSING] Magistratura bosqichi talabalari uchun fan dasturlari va o'quv-uslubiy majmualar.",
+      "schedule_title": "[TRANSLATION_MISSING] Dars jadvali",
+      "schedule_desc": "[TRANSLATION_MISSING] 2025-2026 o'quv yili uchun dars jadvallari. Jadvallarni ko'rish yoki yuklab olish mumkin.",
+      "schedule_labels": {
+        "view": "[TRANSLATION_MISSING] Ko'rish",
+        "download": "[TRANSLATION_MISSING] Yuklab olish",
+        "files_not_found": "[TRANSLATION_MISSING] Fayllar topilmadi",
+        "file_count": "[TRANSLATION_MISSING] fayl"
+      },
+      "schedule_items": {
+        "uzbek_group": "[TRANSLATION_MISSING] O'zbek guruhlari uchun dars jadvali",
+        "russian_group": "[TRANSLATION_MISSING] Rus guruhlari uchun dars jadvali",
+        "special_group": "[TRANSLATION_MISSING] Ko'zi ojiz talabalar uchun dars jadvali",
+        "general_group": "[TRANSLATION_MISSING] Dars jadvali"
+      }
+    }
   },
   "announcement": {
     "text": "Внимание! Прием документов на 2026 учебный год начнется 20 июня. Ждем всех абитуриентов! &nbsp; &nbsp; &nbsp; &nbsp; Объявление: 14 января в институте состоится большое праздничное мероприятие, посвященное Дню защитников Родины."
@@ -233,5 +287,325 @@
     "rights": "© {{year}} Все права защищены.",
     "privacy": "Политика конфиденциальности",
     "terms": "Условия использования"
+  },
+  "structure": {
+    "title": "[TRANSLATION_MISSING] Institut Tuzilmasi",
+    "menu": {
+      "main": "[TRANSLATION_MISSING] Institut Tuzilmasi",
+      "composition": "[TRANSLATION_MISSING] Tarkibiy Tuzilma",
+      "faculties": "[TRANSLATION_MISSING] Fakultet va Kafedralar"
+    },
+    "docs": {
+      "list_title": "[TRANSLATION_MISSING] Me'yoriy-huquqiy hujjatlar ro'yxati:",
+      "read": "[TRANSLATION_MISSING] O'qish",
+      "items": {
+        "1": {
+          "title": "[TRANSLATION_MISSING] O‘zbekiston Respublikasining “Ta’lim to‘g‘risida” gi qonuni",
+          "code": "[TRANSLATION_MISSING] 23.09.2020 yildagi O‘RQ-637-son"
+        },
+        "2": {
+          "title": "[TRANSLATION_MISSING] O‘zbekiston Respublikasining “Madaniy faoliyat va madaniyat tashkilotlari to‘g‘risida”gi qonuni",
+          "code": "[TRANSLATION_MISSING] 20.01.2021 yildagi O‘RQ-668-son"
+        },
+        "3": {
+          "title": "[TRANSLATION_MISSING] O‘zbekiston Respublikasi Prezidentining “O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati institutini tashkil etish to‘g‘risida”gi qarori",
+          "code": "[TRANSLATION_MISSING] 16.10.2021 yildagi PQ-5261-son"
+        },
+        "4": {
+          "title": "[TRANSLATION_MISSING] O‘zbekiston Respublikasi Vazirlar Mahkamasining “Botir Zokirov nomidagi milliy estrada mukofotini ta’sis etish to‘g‘risida”gi qarori",
+          "code": "[TRANSLATION_MISSING] 18.01.2024 yildagi 32-son"
+        },
+        "5": {
+          "title": "[TRANSLATION_MISSING] O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati instituti",
+          "code": "[TRANSLATION_MISSING] Guvohnomasi"
+        },
+        "6": {
+          "title": "[TRANSLATION_MISSING] O‘zbekiston Respublikasi madaniyat vaziri buyrug‘i",
+          "code": "[TRANSLATION_MISSING] Buyruq"
+        },
+        "7": {
+          "title": "[TRANSLATION_MISSING] O‘zbekiston Respublikasi madaniyat vaziri buyrug‘i",
+          "code": "[TRANSLATION_MISSING] Ustavni tasdiqlash to'g'risida"
+        },
+        "8": {
+          "title": "[TRANSLATION_MISSING] O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati instituti ustavi",
+          "code": "[TRANSLATION_MISSING] Ustav"
+        },
+        "9": {
+          "title": "[TRANSLATION_MISSING] O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati instituti 2023-2025 yillar uchun",
+          "code": "[TRANSLATION_MISSING] Jamoat shartnomasi"
+        },
+        "10": {
+          "title": "[TRANSLATION_MISSING] O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati instituti tarkibiy tuzilmasi",
+          "code": "[TRANSLATION_MISSING] Tarkibiy tuzilma"
+        }
+      }
+    },
+    "coop": {
+      "head_title": "[TRANSLATION_MISSING] Bo‘lim boshlig‘i",
+      "description": "[TRANSLATION_MISSING] Bo‘lim faoliyatining asosiy maqsadi institutning ta’lim dasturlari sifatini oshirishga qaratilgan xalqaro hamkorlik dasturlarida ishtirokini tashkil etish va muvofiqlashtirishdir.",
+      "tasks_title": "[TRANSLATION_MISSING] Xalqaro bo‘limning asosiy vazifalari",
+      "tasks": {
+        "1": "[TRANSLATION_MISSING] Institut va xorijiy ta’lim muassasalari va xalqaro tashkilotlar bilan hamkorlik shartnomalari loyihalarini tayyorlash",
+        "2": "[TRANSLATION_MISSING] Xalqaro hamkorlik dasturlarini shakllantirish",
+        "3": "[TRANSLATION_MISSING] Xorijiy va xalqaro ijodiy loyihalar, tanlovlar, festivallar axborotni to‘plash va tizimlashtirish",
+        "4": "[TRANSLATION_MISSING] Institut professor-o‘qituvchilarini xalqaro ta’lim va ijodiy faoliyatda ishtirok etishga jalb qilish",
+        "5": "[TRANSLATION_MISSING] Institutning xalqaro faoliyati doirasida xodimlar, magistrantlar va talabalar uchun stajirovkalarni tashkil etish",
+        "6": "[TRANSLATION_MISSING] Institutda xorijiy professor-o‘qituvchilari ta’lim va ijodiy faoliyatni tashkil etish",
+        "7": "[TRANSLATION_MISSING] Elchixonalar va boshqa davlatlarning vakolatxonalari bilan hamkorlikni tashkil etish"
+      }
+    },
+    "links": {
+      "items": {
+        "1": {
+          "title": "[TRANSLATION_MISSING] O‘zbekiston respublikasi davlat ramzlari",
+          "desc": "[TRANSLATION_MISSING] O‘zbekiston respublikasi davlat ramzlari: O‘zbekiston Respublikasi Konstitutsiyasi, davlat gerbi, davlat bayrog‘i, davlat madhiyasi, davlat konstutsiyasi haqida to‘liq ma’lumot.",
+          "source": "[TRANSLATION_MISSING] constitution.uz"
+        },
+        "2": {
+          "title": "[TRANSLATION_MISSING] O‘zbekiston respublikasi oliy ta’lim, fan va innovatsiyalar vazirligi",
+          "desc": "[TRANSLATION_MISSING] O‘zbekiston respublikasi oliy ta’lim, fan va innovatsiyalar vazirligi"
+        },
+        "3": {
+          "title": "[TRANSLATION_MISSING] O‘zbekiston Respublikasi Madaniyat vazirligi",
+          "desc": "[TRANSLATION_MISSING] O‘zbekiston Respublikasi Madaniyat vazirligi"
+        },
+        "4": {
+          "title": "[TRANSLATION_MISSING] O‘zbeknavo estrada birlashmasi",
+          "desc": "[TRANSLATION_MISSING] O‘zbeknavo estrada birlashmasi"
+        },
+        "5": {
+          "title": "[TRANSLATION_MISSING] O‘zbekiston Davlat Konservatoriyasi",
+          "desc": "[TRANSLATION_MISSING] O‘zbekiston Davlat Konservatoriyasi",
+          "footer": "[TRANSLATION_MISSING] Milliy estrada san'ati instituti ushbu muassasa huzurida ochilgan"
+        }
+      }
+    },
+    "faculties": {
+      "list": {
+        "1": {
+          "title": "[TRANSLATION_MISSING] Estrada cholg‘u ijrochiligi fakulteti",
+          "departments": {
+            "1": "[TRANSLATION_MISSING] Estrada cholg‘ularida ijrochilik kafedrasi",
+            "2": "[TRANSLATION_MISSING] Estrada ijrochiligi pedagoglari tayyorlash kafedrasi",
+            "3": "[TRANSLATION_MISSING] Kompozitorlik va aranjirovka kafedrasi",
+            "4": "[TRANSLATION_MISSING] Orkestr dirijyorligi kafedrasi",
+            "5": "[TRANSLATION_MISSING] Fakultetlararo fortepiano ijrochiligi kafedrasi"
+          }
+        },
+        "2": {
+          "title": "[TRANSLATION_MISSING] Estrada xonandaligi fakulteti",
+          "departments": {
+            "1": "[TRANSLATION_MISSING] Estrada xonandaligi kafedrasi",
+            "2": "[TRANSLATION_MISSING] Musiqiy ovoz rejissorligi kafedrasi",
+            "3": "[TRANSLATION_MISSING] Musiqiy-nazariy va tarixiy fanlar kafedrasi",
+            "4": "[TRANSLATION_MISSING] O‘zbek tili va ijtimoiy fanlar kafedrasi"
+          }
+        }
+      },
+      "composition": {
+        "sections": {
+          "1": {
+            "title": "[TRANSLATION_MISSING] Rektor",
+            "items": {
+              "1": "[TRANSLATION_MISSING] O‘zDK huzuridagi MESI kengashi",
+              "2": "[TRANSLATION_MISSING] Vasiylik kengashi",
+              "3": "[TRANSLATION_MISSING] Rektor maslahat kengashi"
+            }
+          },
+          "2": {
+            "title": "[TRANSLATION_MISSING] Yoshlar masalalari va ma’naviy-ma’rifiy ishlar bo’yicha birinchi prorektor",
+            "items": {
+              "1": "[TRANSLATION_MISSING] Yoshlar bilan ishlash, ma’naviyat va ma’rifat bo‘limi",
+              "2": "[TRANSLATION_MISSING] Tyutorlar",
+              "3": "[TRANSLATION_MISSING] Botir Zokirov muzeyi",
+              "4": "[TRANSLATION_MISSING] Konsert-tijorat va reklama bo‘limi",
+              "5": "[TRANSLATION_MISSING] Jamoatchilik tashkilotlari va kengashlari"
+            }
+          },
+          "3": {
+            "title": "[TRANSLATION_MISSING] O‘quv ishlari bo‘yicha prorektor",
+            "items": {
+              "1": "[TRANSLATION_MISSING] Fakultetlar va kafedralar",
+              "2": "[TRANSLATION_MISSING] O‘quv-uslubiy boshqarma",
+              "3": "[TRANSLATION_MISSING] Registrator Office",
+              "4": "[TRANSLATION_MISSING] O‘quv yordamchi xodimlar",
+              "5": "[TRANSLATION_MISSING] Axborot-resurs markazi",
+              "6": "[TRANSLATION_MISSING] Marketing va talabalar amaliyoti bo‘limi",
+              "7": "[TRANSLATION_MISSING] Video-fonetika bo‘limi",
+              "8": "[TRANSLATION_MISSING] Ovoz yozish studiyasi",
+              "9": "[TRANSLATION_MISSING] Sirtqi bo‘lim"
+            }
+          },
+          "4": {
+            "title": "[TRANSLATION_MISSING] Ilmiy ishlar va innovatsiyalar bo‘yicha prorektor",
+            "items": {
+              "1": "[TRANSLATION_MISSING] Ilmiy-tadqiqotlar, innovatsiyalar va ilmiy-pedagogik kadrlar tayyorlash sektori",
+              "2": "[TRANSLATION_MISSING] Iqtidorli talabalarning ilmiy-tadqiqot faoliyatini tashkil etish sektori",
+              "3": "[TRANSLATION_MISSING] Magistratura bo‘limi",
+              "4": "[TRANSLATION_MISSING] Tahririy nashriyot bo‘limi",
+              "5": "[TRANSLATION_MISSING] Ilmiy-innovatsion ishlanmalarni tijoratlashtirish bo‘limi"
+            }
+          },
+          "5": {
+            "title": "[TRANSLATION_MISSING] Ishlar boshqarmasi boshlig‘i",
+            "items": {
+              "1": "[TRANSLATION_MISSING] Reja moliya sektori",
+              "2": "[TRANSLATION_MISSING] Buxgalteriya",
+              "3": "[TRANSLATION_MISSING] Bosh muhandis",
+              "4": "[TRANSLATION_MISSING] Raqamli ta’lim texnologiyalari markazi",
+              "5": "[TRANSLATION_MISSING] Texnik foydalanish va xo‘jalik bo‘limi",
+              "6": "[TRANSLATION_MISSING] O‘qitishni texnik vositalari bo‘limi",
+              "7": "[TRANSLATION_MISSING] Fuqaro va mehnat muhofazasi bo‘limi",
+              "8": "[TRANSLATION_MISSING] Tibbiy xodim (hamshira)"
+            }
+          },
+          "6": {
+            "title": "[TRANSLATION_MISSING] Boshqa bo‘limlar",
+            "items": {
+              "1": "[TRANSLATION_MISSING] Ta’lim sifatini nazorat qilish bo‘limi",
+              "2": "[TRANSLATION_MISSING] Jismoniy va yuridik shaxslarning murojaatlari bilan ishlash, nazorat va monitoring sektori",
+              "3": "[TRANSLATION_MISSING] Devonxona va arxiv",
+              "4": "[TRANSLATION_MISSING] Xalqaro hamkorlik bo‘limi",
+              "5": "[TRANSLATION_MISSING] Xodimlar bo‘limi",
+              "6": "[TRANSLATION_MISSING] Yuriskonsult",
+              "7": "[TRANSLATION_MISSING] OTM kengashi kotibi",
+              "8": "[TRANSLATION_MISSING] Rektor maslahatchisi",
+              "9": "[TRANSLATION_MISSING] Matbuot kotibi",
+              "10": "[TRANSLATION_MISSING] Psixolog",
+              "11": "[TRANSLATION_MISSING] Korrupsiyaga qarshi kurashish"
+            }
+          }
+        },
+        "static": {
+          "back": "[TRANSLATION_MISSING] Orqaga qaytish",
+          "details_coming_soon": "[TRANSLATION_MISSING] Ushbu bo'lim haqida batafsil ma'lumotlar tez orada joylashtiriladi.",
+          "info_preparing": "[TRANSLATION_MISSING] Hozircha bo'lim faoliyati, vazifalari va xodimlari haqidagi ma'lumotlar tayyorlanmoqda."
+        }
+      },
+      "static": {
+        "fac_departments": "[TRANSLATION_MISSING] Fakultet kafedralari",
+        "general_info": "[TRANSLATION_MISSING] Fakultet haqida umumiy ma'lumot",
+        "deanery": "[TRANSLATION_MISSING] Dekanat, qabul vaqtlar va bog'lanish",
+        "department": "[TRANSLATION_MISSING] Kafedra",
+        "details_coming_soon": "[TRANSLATION_MISSING] Ushbu kafedra/fakultet haqida batafsil ma'lumotlar tez orada joylashtiriladi.",
+        "info_preparing": "[TRANSLATION_MISSING] Hozircha kafedra tuzilmasi, o'qituvchilar va yo'nalishlar bo'yicha ma'lumotlar tayyorlanmoqda.",
+        "back": "[TRANSLATION_MISSING] Orqaga qaytish"
+      }
+    },
+    "zakirov": {
+      "bio": {
+        "p1": "[TRANSLATION_MISSING] 1936 yilda Alisher Navoiy nomidagi opera va balet teatri artisti Karim Zokirov va Muqumiy nomidagi musiqali drama teatri qo'shiqchisi Shoista Saidovalar xonadonida o'g'il farzand dunyoga keladi. To'ng'ich farzandlariga yaxshi niyatlar bilan Botir deb ism qo'yishadi.",
+        "p2": "[TRANSLATION_MISSING] Zokirovlar xonadoniga ko'plab san'at ahli namoyondalari tashrif buyurgani sababli Botirning ko'nglida ham musiqaga nisbatan kuchli muxabbat paydo bo'la boshlaydi. U 1952-1957 yillarda Toshkent Davlat konservatoriyasida, 1958- 1962 yillarda esa Toshkent Davlat teatr va rassomchilik institutlarida tahsil oladi. U “Yoshlik” ansambli va O’zbek Davlat estrada orkestrining yakkaxon xonandasi sifatida faoliyat olib borgan.",
+        "p3": "[TRANSLATION_MISSING] U 29 yoshida O’zbekiston xalq artisti unvoniga sazovor bo’lgan.",
+        "p4": "[TRANSLATION_MISSING] Botir Zokirov 1955-yilda og'ir dardga yo'liqqan. Bir necha marta jarrohlik amaliyotlarini boshidan o'tkazgan. Shifokorlar unga qo'shiq aytishni taqiqlagan. Lekin u ijoddan to'xtamagan.",
+        "p5": "[TRANSLATION_MISSING] U sharq folklori va zamonaviy estrada san'atini uyg'unlashtirib, “Myuzik xoll” ijodiy jamoasini tashkil etgan, xonanda va kompozitor sifatida ko'plab yoshlarga ustozlik qilgan. Respublikada xizmat ko'rsatgan “Yalla” ansamblining tashkil topishida uning xizmatlari katta bo'lgan.",
+        "p6": "[TRANSLATION_MISSING] San'atkorning xotirasini e'zozlash maqsadida 2021-yilda Botir Zokirovning 85 yillik tavallud ayyomi keng nishonlangan. Uning nomidagi milliy mukofot ta'sis etildi. U haqda ilmiy va badiiy asarlar, hujjatli film va spektakllar yaratildi.",
+        "p7": "[TRANSLATION_MISSING] Botir Zokirov tahsil olgan O’zbekiston davlat konservatoriyasi joylashgan ko'chaga uning nomi berildi. Ushbu konservatoriya huzurida Botir Zokirov nomidagi milliy estrada san’ati instituti barpo etildi.",
+        "p8": "[TRANSLATION_MISSING] 2000-yilda “Buyuk xizmatlari uchun” va 2021-yilda “El-yurt hurmati” ordenlari bilan mukofotlangan. 1985- yilda — 49 yoshida vafot etgan."
+      },
+      "quote": {
+        "text": "[TRANSLATION_MISSING] \"Sehrli musiqani tinglab o'zingni yettinchi osmonda his etasan. Alamu og'riqlardan nishon yo'q, faqat ohanglar, ohanglar... Ohanglar erkin qush misol seni yuksaklarga eltadi. Ko'nglingdagi barcha g'uborlar yuvilib ketgan. Ko'zlaringdan sizayotgan yoshni sezasan... <br/><br/> Bu dunyoda boshqa hech narsa yo'q! Bari ro'yo! Faqat, faqat musiqa qoldi. ...Yo'tal ohangga aralashib ketdi. Hechqisi yo'q. Axir, musiqa yangrayapti! Borliq qanchalar go'zal...\"",
+        "author": "[TRANSLATION_MISSING] Botir Zokirov",
+        "title": "[TRANSLATION_MISSING] O'zbekiston xalq artisti"
+      }
+    },
+    "composition": {
+      "sections": {
+        "1": {
+          "title": "[TRANSLATION_MISSING] Rektor",
+          "items": {
+            "1": "[TRANSLATION_MISSING] O‘zDK huzuridagi MESI kengashi",
+            "2": "[TRANSLATION_MISSING] Vasiylik kengashi",
+            "3": "[TRANSLATION_MISSING] Rektor maslahat kengashi"
+          }
+        },
+        "2": {
+          "title": "[TRANSLATION_MISSING] Yoshlar masalalari va ma’naviy-ma’rifiy ishlar bo’yicha birinchi prorektor",
+          "items": {
+            "1": "[TRANSLATION_MISSING] Yoshlar bilan ishlash, ma’naviyat va ma’rifat bo‘limi",
+            "2": "[TRANSLATION_MISSING] Tyutorlar",
+            "3": "[TRANSLATION_MISSING] Botir Zokirov muzeyi",
+            "4": "[TRANSLATION_MISSING] Konsert-tijorat va reklama bo‘limi",
+            "5": "[TRANSLATION_MISSING] Jamoatchilik tashkilotlari va kengashlari"
+          }
+        },
+        "3": {
+          "title": "[TRANSLATION_MISSING] O‘quv ishlari bo‘yicha prorektor",
+          "items": {
+            "1": "[TRANSLATION_MISSING] Fakultetlar va kafedralar",
+            "2": "[TRANSLATION_MISSING] O‘quv-uslubiy boshqarma",
+            "3": "[TRANSLATION_MISSING] Registrator Office",
+            "4": "[TRANSLATION_MISSING] O‘quv yordamchi xodimlar",
+            "5": "[TRANSLATION_MISSING] Axborot-resurs markazi",
+            "6": "[TRANSLATION_MISSING] Marketing va talabalar amaliyoti bo‘limi",
+            "7": "[TRANSLATION_MISSING] Video-fonetika bo‘limi",
+            "8": "[TRANSLATION_MISSING] Ovoz yozish studiyasi",
+            "9": "[TRANSLATION_MISSING] Sirtqi bo‘lim"
+          }
+        },
+        "4": {
+          "title": "[TRANSLATION_MISSING] Ilmiy ishlar va innovatsiyalar bo‘yicha prorektor",
+          "items": {
+            "1": "[TRANSLATION_MISSING] Ilmiy-tadqiqotlar, innovatsiyalar va ilmiy-pedagogik kadrlar tayyorlash sektori",
+            "2": "[TRANSLATION_MISSING] Iqtidorli talabalarning ilmiy-tadqiqot faoliyatini tashkil etish sektori",
+            "3": "[TRANSLATION_MISSING] Magistratura bo‘limi",
+            "4": "[TRANSLATION_MISSING] Tahririy nashriyot bo‘limi",
+            "5": "[TRANSLATION_MISSING] Ilmiy-innovatsion ishlanmalarni tijoratlashtirish bo‘limi"
+          }
+        },
+        "5": {
+          "title": "[TRANSLATION_MISSING] Ishlar boshqarmasi boshlig‘i",
+          "items": {
+            "1": "[TRANSLATION_MISSING] Reja moliya sektori",
+            "2": "[TRANSLATION_MISSING] Buxgalteriya",
+            "3": "[TRANSLATION_MISSING] Bosh muhandis",
+            "4": "[TRANSLATION_MISSING] Raqamli ta’lim texnologiyalari markazi",
+            "5": "[TRANSLATION_MISSING] Texnik foydalanish va xo‘jalik bo‘limi",
+            "6": "[TRANSLATION_MISSING] O‘qitishni texnik vositalari bo‘limi",
+            "7": "[TRANSLATION_MISSING] Fuqaro va mehnat muhofazasi bo‘limi",
+            "8": "[TRANSLATION_MISSING] Tibbiy xodim (hamshira)"
+          }
+        },
+        "6": {
+          "title": "[TRANSLATION_MISSING] Boshqa bo‘limlar",
+          "items": {
+            "1": "[TRANSLATION_MISSING] Ta’lim sifatini nazorat qilish bo‘limi",
+            "2": "[TRANSLATION_MISSING] Jismoniy va yuridik shaxslarning murojaatlari bilan ishlash, nazorat va monitoring sektori",
+            "3": "[TRANSLATION_MISSING] Devonxona va arxiv",
+            "4": "[TRANSLATION_MISSING] Xalqaro hamkorlik bo‘limi",
+            "5": "[TRANSLATION_MISSING] Xodimlar bo‘limi",
+            "6": "[TRANSLATION_MISSING] Yuriskonsult",
+            "7": "[TRANSLATION_MISSING] OTM kengashi kotibi",
+            "8": "[TRANSLATION_MISSING] Rektor maslahatchisi",
+            "9": "[TRANSLATION_MISSING] Matbuot kotibi",
+            "10": "[TRANSLATION_MISSING] Psixolog",
+            "11": "[TRANSLATION_MISSING] Korrupsiyaga qarshi kurashish"
+          }
+        }
+      },
+      "static": {
+        "back": "[TRANSLATION_MISSING] Orqaga qaytish",
+        "details_coming_soon": "[TRANSLATION_MISSING] Ushbu bo'lim haqida batafsil ma'lumotlar tez orada joylashtiriladi.",
+        "info_preparing": "[TRANSLATION_MISSING] Hozircha bo'lim faoliyati, vazifalari va xodimlari haqidagi ma'lumotlar tayyorlanmoqda."
+      }
+    }
+  },
+  "media": {
+    "title": "[TRANSLATION_MISSING] Media Galereya",
+    "description": "[TRANSLATION_MISSING] Institut hayotidan yorqin lavhalar, musiqiy ijrolar va video reportajlar.",
+    "tabs": {
+      "photos": "[TRANSLATION_MISSING] Fotolar",
+      "audios": "[TRANSLATION_MISSING] Musiqalar",
+      "videos": "[TRANSLATION_MISSING] Videolar"
+    },
+    "photos": {
+      "empty": "[TRANSLATION_MISSING] Rasmlar topilmadi",
+      "alt_prefix": "[TRANSLATION_MISSING] Media Galereya Rasm"
+    },
+    "audios": {
+      "other_albums": "[TRANSLATION_MISSING] Boshqa to'plamlar",
+      "video_prefix": "[TRANSLATION_MISSING] Video Lavha"
+    }
   }
 }

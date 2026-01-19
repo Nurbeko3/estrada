@@ -1,13 +1,15 @@
 import React, { useState, useMemo } from 'react';
 import { Tabs, Image, Typography, Empty } from 'antd';
 import { SoundOutlined, PlayCircleOutlined, PictureOutlined } from '@ant-design/icons';
+import { useTranslation } from 'react-i18next';
 
 const { Title, Text } = Typography;
 
 // Dynamically import images from src/assets/images/MediaGallery
-const photoFiles = import.meta.glob('../../assets/images/MediaGallery/*.{png,jpg,jpeg,svg,webp}', { eager: true, as: 'url' });
+const photoFiles = import.meta.glob('../../assets/images/MediaGallery/*.{png,jpg,jpeg,svg,webp}', { eager: true, query: '?url', import: 'default' });
 
 const MediaGalleryComponent = () => {
+    const { t } = useTranslation();
     const [activeTab, setActiveTab] = useState('photos');
 
     // --- DATA ---
@@ -19,10 +21,10 @@ const MediaGalleryComponent = () => {
             return {
                 src: photoFiles[path],
                 id: index,
-                alt: `Media Gallery Photo ${index + 1}`
+                alt: `${t('media.photos.alt_prefix')} ${index + 1}`
             };
         });
-    }, []);
+    }, [t]);
 
     // 2. Audio - Spotify Albums
     const spotifyAlbums = [
@@ -52,18 +54,18 @@ const MediaGalleryComponent = () => {
 
     // 3. Videos - YouTube
     const videos = [
-        { id: "_wWHlilXDRE", title: "Video Lavha 1" },
-        { id: "SBCD2f1elfY", title: "Video Lavha 2" },
-        { id: "hGUOwVYSWxE", title: "Video Lavha 3" },
-        { id: "mzfoThtXSQ0", title: "Video Lavha 4" },
-        { id: "-z2NR07jO8A", title: "Video Lavha 5" },
-        { id: "wWqHqaWkDL0", title: "Video Lavha 6" }
+        { id: "_wWHlilXDRE", title: `${t('media.audios.video_prefix')} 1` },
+        { id: "SBCD2f1elfY", title: `${t('media.audios.video_prefix')} 2` },
+        { id: "hGUOwVYSWxE", title: `${t('media.audios.video_prefix')} 3` },
+        { id: "mzfoThtXSQ0", title: `${t('media.audios.video_prefix')} 4` },
+        { id: "-z2NR07jO8A", title: `${t('media.audios.video_prefix')} 5` },
+        { id: "wWqHqaWkDL0", title: `${t('media.audios.video_prefix')} 6` }
     ];
 
     // --- RENDERERS ---
 
     const renderPhotos = () => {
-        if (!photos || photos.length === 0) return <Empty description="Rasmlar topilmadi" />;
+        if (!photos || photos.length === 0) return <Empty description={t('media.photos.empty')} />;
 
         return (
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -108,7 +110,7 @@ const MediaGalleryComponent = () => {
                 {/* Album Selection List */}
                 <div>
                     <h3 className="text-xl font-bold dark:text-white mb-4 flex items-center gap-2">
-                        <SoundOutlined className="text-accent" /> Boshqa to'plamlar
+                        <SoundOutlined className="text-accent" /> {t('media.audios.other_albums')}
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                         {spotifyAlbums.map((album) => (
@@ -172,7 +174,7 @@ const MediaGalleryComponent = () => {
             key: 'photos',
             label: (
                 <span className="flex items-center gap-2">
-                    <PictureOutlined /> Fotolar
+                    <PictureOutlined /> {t('media.tabs.photos')}
                 </span>
             ),
             children: renderPhotos(),
@@ -181,7 +183,7 @@ const MediaGalleryComponent = () => {
             key: 'audios',
             label: (
                 <span className="flex items-center gap-2">
-                    <SoundOutlined /> Musiqalar
+                    <SoundOutlined /> {t('media.tabs.audios')}
                 </span>
             ),
             children: renderAudio(),
@@ -190,7 +192,7 @@ const MediaGalleryComponent = () => {
             key: 'videos',
             label: (
                 <span className="flex items-center gap-2">
-                    <PlayCircleOutlined /> Videolar
+                    <PlayCircleOutlined /> {t('media.tabs.videos')}
                 </span>
             ),
             children: renderVideos(),
@@ -200,9 +202,9 @@ const MediaGalleryComponent = () => {
     return (
         <div className="space-y-6">
             <div>
-                <Title level={2} className="dark:text-white mb-2">Media Galereya</Title>
+                <Title level={2} className="dark:text-white mb-2">{t('media.title')}</Title>
                 <Text className="text-gray-500 dark:text-gray-400">
-                    Institut hayotidan yorqin lavhalar, musiqiy ijrolar va video reportajlar.
+                    {t('media.description')}
                 </Text>
             </div>
 
